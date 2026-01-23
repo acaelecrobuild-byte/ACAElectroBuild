@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ACA ÉlectroBuild : expert en électricité, réseaux, sécurité incendie, vidéosurveillance et aménagement intérieur à Boumerdès, Tizi Ouzou et Alger. Devis gratuit.">
     <title>ACA ÉlectroBuild - Votre confort, notre expertise technique</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" type="image/svg+xml">
     <style>
         * {
             margin: 0;
@@ -19,32 +21,28 @@
             position: relative;
         }
 
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                linear-gradient(135deg, rgba(26, 61, 107, 0.92) 0%, rgba(44, 90, 160, 0.88) 100%),
-                url('https://images.pexels.com/photos/3137086/pexels-photo-3137086.jpeg') center/cover fixed;
-            z-index: -1;
-        }
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, rgba(26, 61, 107, 0.92) 0%, rgba(44, 90, 160, 0.88) 100%), url('https://images.pexels.com/photos/3137086/pexels-photo-3137086.jpeg') center/cover fixed;
+                z-index: -1;
+            }
 
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(74, 144, 226, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(168, 213, 255, 0.1) 0%, transparent 50%);
-            pointer-events: none;
-            z-index: -1;
-        }
+            body::after {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle at 20% 50%, rgba(74, 144, 226, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(168, 213, 255, 0.1) 0%, transparent 50%);
+                pointer-events: none;
+                z-index: -1;
+            }
 
         .header {
             background: rgba(10, 25, 41, 0.95);
@@ -112,25 +110,25 @@
             padding: 0.5rem 0;
         }
 
-        nav a::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #4a90e2, #a8d5ff);
-            transition: all 0.3s;
-            transform: translateX(-50%);
-        }
+            nav a::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0;
+                height: 2px;
+                background: linear-gradient(90deg, #4a90e2, #a8d5ff);
+                transition: all 0.3s;
+                transform: translateX(-50%);
+            }
 
-        nav a:hover::before {
-            width: 100%;
-        }
+            nav a:hover::before {
+                width: 100%;
+            }
 
-        nav a:hover {
-            color: #a8d5ff;
-        }
+            nav a:hover {
+                color: #a8d5ff;
+            }
 
         .hero {
             position: relative;
@@ -143,22 +141,27 @@
             border-bottom: 3px solid rgba(74, 144, 226, 0.3);
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-            animation: gridMove 20s linear infinite;
-            opacity: 0.3;
-        }
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 1px, transparent 1px);
+                background-size: 50px 50px;
+                animation: gridMove 20s linear infinite;
+                opacity: 0.3;
+            }
 
         @keyframes gridMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
 
         .hero-content {
@@ -208,36 +211,36 @@
             overflow: hidden;
         }
 
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s;
-        }
+            .cta-button::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+                transition: left 0.5s;
+            }
 
-        .cta-button:hover::before {
-            left: 100%;
-        }
+            .cta-button:hover::before {
+                left: 100%;
+            }
 
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 50px rgba(74, 144, 226, 0.6);
-        }
+            .cta-button:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 15px 50px rgba(74, 144, 226, 0.6);
+            }
 
-        .cta-button.secondary {
-            background: transparent;
-            border: 2px solid #4a90e2;
-            box-shadow: 0 10px 40px rgba(74, 144, 226, 0.2);
-        }
+            .cta-button.secondary {
+                background: transparent;
+                border: 2px solid #4a90e2;
+                box-shadow: 0 10px 40px rgba(74, 144, 226, 0.2);
+            }
 
-        .cta-button.secondary:hover {
-            background: rgba(74, 144, 226, 0.2);
-            border-color: #a8d5ff;
-        }
+                .cta-button.secondary:hover {
+                    background: rgba(74, 144, 226, 0.2);
+                    border-color: #a8d5ff;
+                }
 
         .stats-bar {
             background: rgba(10, 25, 41, 0.95);
@@ -265,19 +268,19 @@
             position: relative;
         }
 
-        .stat-item::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 20%;
-            height: 60%;
-            width: 1px;
-            background: linear-gradient(to bottom, transparent, rgba(74, 144, 226, 0.5), transparent);
-        }
+            .stat-item::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 20%;
+                height: 60%;
+                width: 1px;
+                background: linear-gradient(to bottom, transparent, rgba(74, 144, 226, 0.5), transparent);
+            }
 
-        .stat-item:last-child::after {
-            display: none;
-        }
+            .stat-item:last-child::after {
+                display: none;
+            }
 
         .stat-number {
             font-size: 3rem;
@@ -339,23 +342,28 @@
             border: 1px solid rgba(74, 144, 226, 0.2);
         }
 
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #4a90e2, #a8d5ff, #4a90e2);
-            background-size: 200% 100%;
-            animation: shimmer 3s linear infinite;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
+            .service-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(90deg, #4a90e2, #a8d5ff, #4a90e2);
+                background-size: 200% 100%;
+                animation: shimmer 3s linear infinite;
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
 
         @keyframes shimmer {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
+            0% {
+                background-position: -200% 0;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
         }
 
         .service-card:hover::before {
@@ -452,11 +460,11 @@
             border: 1px solid rgba(74, 144, 226, 0.2);
         }
 
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(74, 144, 226, 0.4);
-            border-color: rgba(74, 144, 226, 0.5);
-        }
+            .feature-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 60px rgba(74, 144, 226, 0.4);
+                border-color: rgba(74, 144, 226, 0.5);
+            }
 
         .feature-icon {
             font-size: 3.5rem;
@@ -507,27 +515,27 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
 
-        .zone-item:hover {
-            background: rgba(74, 144, 226, 0.2);
-            transform: scale(1.05);
-            border-color: rgba(74, 144, 226, 0.6);
-            box-shadow: 0 15px 50px rgba(74, 144, 226, 0.4);
-        }
+            .zone-item:hover {
+                background: rgba(74, 144, 226, 0.2);
+                transform: scale(1.05);
+                border-color: rgba(74, 144, 226, 0.6);
+                box-shadow: 0 15px 50px rgba(74, 144, 226, 0.4);
+            }
 
-        .zone-item h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 700;
-        }
+            .zone-item h3 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-weight: 700;
+            }
 
-        .zone-item p {
-            color: rgba(255,255,255,0.8);
-            font-size: 1.1rem;
-        }
+            .zone-item p {
+                color: rgba(255,255,255,0.8);
+                font-size: 1.1rem;
+            }
 
         .contact-section {
             background: rgba(10, 25, 41, 0.95);
@@ -540,7 +548,7 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 3rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -553,34 +561,37 @@
             text-align: center;
         }
 
-        .social-contact h3 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+            .social-contact h3 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
 
         .social-buttons {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
+            margin-bottom: 2.5rem;
         }
 
         .social-btn {
             display: inline-flex;
             align-items: center;
-            gap: 1rem;
-            padding: 1.2rem 2.5rem;
+            gap: 0.8rem;
+            padding: 1rem 2rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: all 0.4s;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
             border: 2px solid;
+            min-width: 160px;
+            justify-content: center;
         }
 
         .whatsapp-btn {
@@ -589,11 +600,11 @@
             border-color: rgba(255,255,255,0.3);
         }
 
-        .whatsapp-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
-            background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
-        }
+            .whatsapp-btn:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+                background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+            }
 
         .messenger-btn {
             background: linear-gradient(135deg, #0084FF 0%, #0066CC 100%);
@@ -601,24 +612,52 @@
             border-color: rgba(255,255,255,0.3);
         }
 
-        .messenger-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 132, 255, 0.5);
-            background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
+            .messenger-btn:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(0, 132, 255, 0.5);
+                background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
+            }
+
+        .facebook-btn {
+            background: linear-gradient(135deg, #1877F2 0%, #0D5AB9 100%);
+            color: white;
+            border-color: rgba(255,255,255,0.3);
         }
+
+            .facebook-btn:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(24, 119, 242, 0.5);
+                background: linear-gradient(135deg, #0D5AB9 0%, #083E7C 100%);
+            }
+
+        .instagram-btn {
+            background: linear-gradient(135deg, #E1306C 0%, #C13584 100%);
+            color: white;
+            border-color: rgba(255,255,255,0.3);
+        }
+
+            .instagram-btn:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(225, 48, 108, 0.5);
+                background: linear-gradient(135deg, #C13584 0%, #833AB4 100%);
+            }
+
+        .tiktok-btn {
+            background: linear-gradient(135deg, #000000 0%, #696969 100%);
+            color: white;
+            border-color: rgba(255,255,255,0.3);
+        }
+
+            .tiktok-btn:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+                background: linear-gradient(135deg, #696969 0%, #333333 100%);
+            }
 
         .social-icon {
-            font-size: 1.5rem;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 3rem;
-            max-width: 1400px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
+            font-size: 1.4rem;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
         }
 
         .contact-item {
@@ -632,12 +671,12 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
 
-        .contact-item:hover {
-            background: rgba(74, 144, 226, 0.3);
-            transform: translateY(-10px);
-            border-color: rgba(74, 144, 226, 0.6);
-            box-shadow: 0 20px 60px rgba(74, 144, 226, 0.4);
-        }
+            .contact-item:hover {
+                background: rgba(74, 144, 226, 0.3);
+                transform: translateY(-10px);
+                border-color: rgba(74, 144, 226, 0.6);
+                box-shadow: 0 20px 60px rgba(74, 144, 226, 0.4);
+            }
 
         .contact-icon {
             font-size: 3.5rem;
@@ -692,10 +731,10 @@
             box-shadow: 0 10px 30px rgba(74, 144, 226, 0.4);
         }
 
-        .devis-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(74, 144, 226, 0.6);
-        }
+            .devis-button:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 15px 40px rgba(74, 144, 226, 0.6);
+            }
 
         .map-container {
             margin-top: 3rem;
@@ -705,18 +744,11 @@
             border: 2px solid rgba(74, 144, 226, 0.3);
         }
 
-        .map-container iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
-        }
-
-        .contact-item a {
-            display: inline-block;
-            padding: 0.5rem 0;
-            transition: all 0.3s;
-            position: relative;
-        }
+            .map-container iframe {
+                width: 100%;
+                height: 450px;
+                border: none;
+            }
 
         .contact-item a::after {
             content: '';
@@ -746,10 +778,10 @@
             border-top: 1px solid rgba(74, 144, 226, 0.3);
         }
 
-        footer p {
-            margin: 0.7rem 0;
-            opacity: 0.8;
-        }
+            footer p {
+                margin: 0.7rem 0;
+                opacity: 0.8;
+            }
 
         .scroll-top {
             position: fixed;
@@ -772,15 +804,15 @@
             border: 2px solid rgba(255,255,255,0.2);
         }
 
-        .scroll-top.visible {
-            opacity: 1;
-        }
+            .scroll-top.visible {
+                opacity: 1;
+            }
 
-        .scroll-top:hover {
-            background: linear-gradient(135deg, #2c5aa0 0%, #1a3d6b 100%);
-            transform: translateY(-8px);
-            box-shadow: 0 15px 50px rgba(74, 144, 226, 0.6);
-        }
+            .scroll-top:hover {
+                background: linear-gradient(135deg, #2c5aa0 0%, #1a3d6b 100%);
+                transform: translateY(-8px);
+                box-shadow: 0 15px 50px rgba(74, 144, 226, 0.6);
+            }
 
         @media (max-width: 768px) {
             nav ul {
@@ -813,12 +845,32 @@
                 grid-template-columns: 1fr 1fr;
             }
 
+            @media (max-width: 600px) {
+                .stats-container {
+                    grid-template-columns: 1fr;
+                }
+
+                .stat-item::after {
+                    display: none;
+                }
+            }
+
             .services-grid {
                 grid-template-columns: 1fr;
             }
 
             .container {
                 padding: 4rem 1.5rem;
+            }
+
+            .social-buttons {
+                gap: 1rem;
+            }
+
+            .social-btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.95rem;
+                min-width: 140px;
             }
         }
     </style>
@@ -833,7 +885,7 @@
                     <p>Votre confort, notre expertise technique</p>
                 </div>
             </div>
-            <nav>
+            <nav aria-label="Navigation principale">
                 <ul>
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#services">Services</a></li>
@@ -859,7 +911,7 @@
     <div class="stats-bar">
         <div class="stats-container">
             <div class="stat-item">
-                <div class="stat-number">500+</div>
+                <div class="stat-number">50+</div>
                 <div class="stat-label">Projets Réalisés</div>
             </div>
             <div class="stat-item">
@@ -883,7 +935,7 @@
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-image-container">
-                    <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg" alt="Électricité" class="service-image">
+                    <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg" alt="Installation électrique résidentielle et industrielle" class="service-image">
                 </div>
                 <div class="service-content">
                     <div class="service-icon">⚡</div>
@@ -894,7 +946,7 @@
 
             <div class="service-card">
                 <div class="service-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2019/08/08/16/51/network-4393368_1280.jpg" alt="Réseaux" class="service-image">
+                    <img src="https://cdn.pixabay.com/photo/2019/08/08/16/51/network-4393368_1280.jpg" alt="Réseaux informatiques et fibre optique" class="service-image">
                 </div>
                 <div class="service-content">
                     <div class="service-icon">🌐</div>
@@ -905,7 +957,7 @@
 
             <div class="service-card">
                 <div class="service-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2018/05/18/00/15/alarm-3410065_1280.jpg" alt="Sécurité Incendie" class="service-image">
+                    <img src="https://cdn.pixabay.com/photo/2018/05/18/00/15/alarm-3410065_1280.jpg" alt="Système de détection incendie" class="service-image">
                 </div>
                 <div class="service-content">
                     <div class="service-icon">🔥</div>
@@ -916,7 +968,7 @@
 
             <div class="service-card">
                 <div class="service-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2016/01/17/02/08/cctv-1144371_1280.jpg" alt="Vidéosurveillance" class="service-image">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/17/02/08/cctv-1144371_1280.jpg" alt="Caméras de surveillance haute définition" class="service-image">
                 </div>
                 <div class="service-content">
                     <div class="service-icon">📹</div>
@@ -927,7 +979,7 @@
 
             <div class="service-card">
                 <div class="service-image-container">
-                    <img src="https://images.unsplash.com/photo-1697382608786-bcf4c113b86e?w=800&h=400&fit=crop" alt="Contrôle d'accès" class="service-image">
+                    <img src="https://images.unsplash.com/photo-1697382608786-bcf4c113b86e?w=800&h=400&fit=crop" alt="Contrôle d'accès biométrique et badges" class="service-image">
                 </div>
                 <div class="service-content">
                     <div class="service-icon">🔐</div>
@@ -938,7 +990,7 @@
 
             <div class="service-card">
                 <div class="service-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2023/05/06/08/34/office-7973868_1280.jpg" alt="Aménagement" class="service-image">
+                    <img src="https://cdn.pixabay.com/photo/2023/05/06/08/34/office-7973868_1280.jpg" alt="Aménagement intérieur : cloisons, sols, peinture" class="service-image">
                 </div>
                 <div class="service-content">
                     <div class="service-icon">🏠</div>
@@ -999,7 +1051,7 @@
                     <a href="https://www.google.com/maps/place/Algiers,+Algeria" target="_blank" style="color: #a8d5ff; text-decoration: underline; margin-top: 1rem; display: inline-block;">Voir sur Google Maps</a>
                 </div>
             </div>
-            
+
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412664.4141837758!2d2.9380788!3d36.7537881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb26977ea683b%3A0xb5d0c1e3435fab!2sAlgiers%2C%20Algeria!5e0!3m2!1sen!2sdz!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -1036,8 +1088,9 @@
                 </div>
             </div>
 
+            <!-- Section Réseaux Sociaux + Widgets -->
             <div class="social-contact">
-                <h3>💬 Contactez-nous sur les réseaux sociaux</h3>
+                <h3>📱 Retrouvez-nous sur les réseaux</h3>
                 <div class="social-buttons">
                     <a href="https://wa.me/213773927014?text=Bonjour%20ACA%20ÉlectroBuild,%20je%20souhaite%20obtenir%20des%20informations" class="social-btn whatsapp-btn" target="_blank">
                         <span class="social-icon">📱</span>
@@ -1047,6 +1100,44 @@
                         <span class="social-icon">💬</span>
                         <span>Messenger</span>
                     </a>
+                    <a href="https://www.facebook.com/profile.php?id=61586759348766" class="social-btn facebook-btn" target="_blank">
+                        <span class="social-icon">f</span>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/acaelecrobuild/" class="social-btn instagram-btn" target="_blank">
+                        <span class="social-icon">📷</span>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@aca_electrobuild" class="social-btn tiktok-btn" target="_blank">
+                        <span class="social-icon">🎵</span>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+
+                <!-- Widgets sociaux -->
+                <div class="social-widgets" style="margin-top: 3rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 1200px; margin-left: auto; margin-right: auto;">
+
+                    <!-- TikTok Embed -->
+                    <div class="tiktok-widget" style="flex: 1; min-width: 300px; background: rgba(20, 30, 50, 0.6); padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(74, 144, 226, 0.3);">
+                        <h4 style="color: #a8d5ff; text-align: center; margin-bottom: 1.2rem; font-size: 1.3rem;">Nos dernières vidéos TikTok</h4>
+                        <div style="display: flex; justify-content: center;">
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aca_electrobuild" data-embed-type="profile" style="max-width: 400px; width: 100%;">
+                                <section></section>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Placeholder -->
+                    <div class="instagram-widget" style="flex: 1; min-width: 300px; background: rgba(20, 30, 50, 0.6); padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(225, 48, 108, 0.3); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1.2rem; color: #E1306C;">📷</div>
+                        <h4 style="color: #E1306C; text-align: center; margin-bottom: 1rem; font-size: 1.3rem;">Suivez-nous sur Instagram</h4>
+                        <p style="color: rgba(255,255,255,0.85); text-align: center; margin-bottom: 1.5rem; max-width: 300px;">
+                            Découvrez nos réalisations, avant/après et conseils en direct !
+                        </p>
+                        <a href="https://www.instagram.com/acaelecrobuild/" target="_blank" class="cta-button" style="background: linear-gradient(135deg, #E1306C 0%, #C13584 100%); padding: 0.8rem 2rem; font-size: 1rem;">
+                            Voir notre profil
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1060,8 +1151,11 @@
 
     <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
 
+    <!-- Script officiel TikTok Embed -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
     <script>
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const scrollTop = document.getElementById('scrollTop');
             if (window.scrollY > 300) {
                 scrollTop.classList.add('visible');
