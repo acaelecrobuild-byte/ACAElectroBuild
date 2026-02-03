@@ -1,1189 +1,1135 @@
+<!DOCTYPE html>
+<html lang="fr-DZ">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ACA ÉlectroBuild : expert en électricité, réseaux, sécurité incendie, vidéosurveillance et aménagement intérieur à Boumerdès, Tizi Ouzou et Alger. Devis gratuit.">
-  <title>ACA ÉlectroBuild - Votre confort, notre expertise technique</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" type="image/svg+xml">
-
-  <!-- Google tag (gtag.js) - ACA ÉlectroBuild -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R7EF4DPXC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5R7EF4DPXC');
-  </script>
-
-  <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-            body::before {
-                content: '';
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(135deg, rgba(26, 61, 107, 0.92) 0%, rgba(44, 90, 160, 0.88) 100%), url('https://images.pexels.com/photos/3137086/pexels-photo-3137086.jpeg') center/cover fixed;
-                z-index: -1;
-            }
-
-            body::after {
-                content: '';
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: radial-gradient(circle at 20% 50%, rgba(74, 144, 226, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(168, 213, 255, 0.1) 0%, transparent 50%);
-                pointer-events: none;
-                z-index: -1;
-            }
-
-        .header {
-            background: rgba(10, 25, 41, 0.95);
-            backdrop-filter: blur(20px);
-            color: white;
-            padding: 1.2rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 3rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .logo-image {
-            height: 60px;
-            width: auto;
-        }
-
-        .logo-text h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #fff 0%, #4a90e2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 1px;
-        }
-
-        .logo-text p {
-            font-size: 0.9rem;
-            opacity: 0.9;
-            margin-top: 0.3rem;
-            color: #a8d5ff;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 3rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1.05rem;
-            transition: all 0.3s;
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-            nav a::before {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                width: 0;
-                height: 2px;
-                background: linear-gradient(90deg, #4a90e2, #a8d5ff);
-                transition: all 0.3s;
-                transform: translateX(-50%);
-            }
-
-            nav a:hover::before {
-                width: 100%;
-            }
-
-            nav a:hover {
-                color: #a8d5ff;
-            }
-
-        .hero {
-            position: relative;
-            background: linear-gradient(135deg, rgba(10, 25, 41, 0.8) 0%, rgba(26, 61, 107, 0.85) 100%);
-            color: white;
-            padding: 200px 3rem 120px;
-            text-align: center;
-            margin-top: 80px;
-            overflow: hidden;
-            border-bottom: 3px solid rgba(74, 144, 226, 0.3);
-        }
-
-            .hero::before {
-                content: '';
-                position: absolute;
-                top: -50%;
-                left: -50%;
-                width: 200%;
-                height: 200%;
-                background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 1px, transparent 1px);
-                background-size: 50px 50px;
-                animation: gridMove 20s linear infinite;
-                opacity: 0.3;
-            }
-
-        @keyframes gridMove {
-            0% {
-                transform: translate(0, 0);
-            }
-
-            100% {
-                transform: translate(50px, 50px);
-            }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .hero h2 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
-            background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 3rem;
-            opacity: 0.95;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #4a90e2 0%, #2c5aa0 100%);
-            color: white;
-            padding: 1.3rem 3.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.4s;
-            box-shadow: 0 10px 40px rgba(74, 144, 226, 0.4);
-            position: relative;
-            overflow: hidden;
-        }
-
-            .cta-button::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-                transition: left 0.5s;
-            }
-
-            .cta-button:hover::before {
-                left: 100%;
-            }
-
-            .cta-button:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 15px 50px rgba(74, 144, 226, 0.6);
-            }
-
-            .cta-button.secondary {
-                background: transparent;
-                border: 2px solid #4a90e2;
-                box-shadow: 0 10px 40px rgba(74, 144, 226, 0.2);
-            }
-
-                .cta-button.secondary:hover {
-                    background: rgba(74, 144, 226, 0.2);
-                    border-color: #a8d5ff;
-                }
-
-        .stats-bar {
-            background: rgba(10, 25, 41, 0.95);
-            backdrop-filter: blur(20px);
-            padding: 3.5rem 3rem;
-            box-shadow: 0 10px 50px rgba(0,0,0,0.3);
-            margin-top: -50px;
-            position: relative;
-            z-index: 10;
-            border-top: 2px solid rgba(74, 144, 226, 0.3);
-            border-bottom: 2px solid rgba(74, 144, 226, 0.3);
-        }
-
-        .stats-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 3rem;
-            text-align: center;
-        }
-
-        .stat-item {
-            padding: 1.5rem;
-            position: relative;
-        }
-
-            .stat-item::after {
-                content: '';
-                position: absolute;
-                right: 0;
-                top: 20%;
-                height: 60%;
-                width: 1px;
-                background: linear-gradient(to bottom, transparent, rgba(74, 144, 226, 0.5), transparent);
-            }
-
-            .stat-item:last-child::after {
-                display: none;
-            }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #4a90e2 0%, #a8d5ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: rgba(255,255,255,0.8);
-            font-size: 1.1rem;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 6rem 3rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 800;
-            position: relative;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: rgba(255,255,255,0.8);
-            margin-bottom: 5rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 3rem;
-        }
-
-        .service-card {
-            background: rgba(10, 25, 41, 0.9);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-        }
-
-            .service-card::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                height: 4px;
-                background: linear-gradient(90deg, #4a90e2, #a8d5ff, #4a90e2);
-                background-size: 200% 100%;
-                animation: shimmer 3s linear infinite;
-                opacity: 0;
-                transition: opacity 0.5s;
-            }
-
-        @keyframes shimmer {
-            0% {
-                background-position: -200% 0;
-            }
-
-            100% {
-                background-position: 200% 0;
-            }
-        }
-
-        .service-card:hover::before {
-            opacity: 1;
-        }
-
-        .service-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            box-shadow: 0 25px 70px rgba(74, 144, 226, 0.4);
-            border-color: rgba(74, 144, 226, 0.5);
-        }
-
-        .service-image-container {
-            width: 100%;
-            height: 240px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .service-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.7s ease;
-        }
-
-        .service-card:hover .service-image {
-            transform: scale(1.15);
-        }
-
-        .service-image-container::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50%;
-            background: linear-gradient(to top, rgba(10, 25, 41, 1), transparent);
-        }
-
-        .service-content {
-            padding: 2.5rem;
-            position: relative;
-        }
-
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            display: inline-block;
-            filter: drop-shadow(0 0 10px rgba(74, 144, 226, 0.5));
-        }
-
-        .service-card h3 {
-            background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .service-card p {
-            color: rgba(255,255,255,0.8);
-            line-height: 1.9;
-            font-size: 1.05rem;
-        }
-
-        .why-us-section {
-            background: rgba(10, 25, 41, 0.6);
-            backdrop-filter: blur(10px);
-            padding: 6rem 0;
-            border-top: 2px solid rgba(74, 144, 226, 0.3);
-            border-bottom: 2px solid rgba(74, 144, 226, 0.3);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 3rem;
-        }
-
-        .feature-card {
-            background: rgba(10, 25, 41, 0.8);
-            backdrop-filter: blur(20px);
-            padding: 3rem;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            transition: all 0.4s;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-        }
-
-            .feature-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 20px 60px rgba(74, 144, 226, 0.4);
-                border-color: rgba(74, 144, 226, 0.5);
-            }
-
-        .feature-icon {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            display: inline-block;
-            filter: drop-shadow(0 0 15px rgba(74, 144, 226, 0.6));
-        }
-
-        .feature-card h3 {
-            background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-            font-weight: 700;
-        }
-
-        .feature-card p {
-            color: rgba(255,255,255,0.8);
-            line-height: 1.8;
-        }
-
-        .zone-section {
-            background: rgba(10, 25, 41, 0.7);
-            backdrop-filter: blur(15px);
-            padding: 6rem 0;
-            position: relative;
-        }
-
-        .zone-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 3rem;
-        }
-
-        .zone-item {
-            background: rgba(10, 25, 41, 0.9);
-            backdrop-filter: blur(20px);
-            padding: 3rem;
-            border-radius: 20px;
-            text-align: center;
-            border: 2px solid rgba(74, 144, 226, 0.3);
-            transition: all 0.4s;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-        }
-
-            .zone-item:hover {
-                background: rgba(74, 144, 226, 0.2);
-                transform: scale(1.05);
-                border-color: rgba(74, 144, 226, 0.6);
-                box-shadow: 0 15px 50px rgba(74, 144, 226, 0.4);
-            }
-
-            .zone-item h3 {
-                font-size: 1.8rem;
-                margin-bottom: 1rem;
-                background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                font-weight: 700;
-            }
-
-            .zone-item p {
-                color: rgba(255,255,255,0.8);
-                font-size: 1.1rem;
-            }
-
-        .contact-section {
-            background: rgba(10, 25, 41, 0.95);
-            backdrop-filter: blur(20px);
-            color: white;
-            padding: 6rem 3rem;
-            position: relative;
-            border-top: 2px solid rgba(74, 144, 226, 0.3);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 3rem;
-            max-width: 1400px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
-
-        .social-contact {
-            margin-top: 4rem;
-            text-align: center;
-        }
-
-            .social-contact h3 {
-                font-size: 2rem;
-                margin-bottom: 2rem;
-                background: linear-gradient(135deg, #ffffff 0%, #a8d5ff 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-            }
-
-        .social-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 2.5rem;
-        }
-
-        .social-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.8rem;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.4s;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-            border: 2px solid;
-            min-width: 160px;
-            justify-content: center;
-        }
-
-        .whatsapp-btn {
-            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-            color: white;
-            border-color: rgba(255,255,255,0.3);
-        }
-
-            .whatsapp-btn:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
-                background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
-            }
-
-        .messenger-btn {
-            background: linear-gradient(135deg, #0084FF 0%, #0066CC 100%);
-            color: white;
-            border-color: rgba(255,255,255,0.3);
-        }
-
-            .messenger-btn:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 15px 40px rgba(0, 132, 255, 0.5);
-                background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
-            }
-
-        .facebook-btn {
-            background: linear-gradient(135deg, #1877F2 0%, #0D5AB9 100%);
-            color: white;
-            border-color: rgba(255,255,255,0.3);
-        }
-
-            .facebook-btn:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 15px 40px rgba(24, 119, 242, 0.5);
-                background: linear-gradient(135deg, #0D5AB9 0%, #083E7C 100%);
-            }
-
-        .instagram-btn {
-            background: linear-gradient(135deg, #E1306C 0%, #C13584 100%);
-            color: white;
-            border-color: rgba(255,255,255,0.3);
-        }
-
-            .instagram-btn:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 15px 40px rgba(225, 48, 108, 0.5);
-                background: linear-gradient(135deg, #C13584 0%, #833AB4 100%);
-            }
-
-        .tiktok-btn {
-            background: linear-gradient(135deg, #000000 0%, #696969 100%);
-            color: white;
-            border-color: rgba(255,255,255,0.3);
-        }
-
-            .tiktok-btn:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-                background: linear-gradient(135deg, #696969 0%, #333333 100%);
-            }
-
-        .social-icon {
-            font-size: 1.4rem;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-        }
-
-        .contact-item {
-            text-align: center;
-            padding: 3rem;
-            background: rgba(26, 61, 107, 0.5);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 2px solid rgba(74, 144, 226, 0.3);
-            transition: all 0.4s;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-        }
-
-            .contact-item:hover {
-                background: rgba(74, 144, 226, 0.3);
-                transform: translateY(-10px);
-                border-color: rgba(74, 144, 226, 0.6);
-                box-shadow: 0 20px 60px rgba(74, 144, 226, 0.4);
-            }
-
-        .contact-icon {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            display: inline-block;
-            filter: drop-shadow(0 0 15px rgba(74, 144, 226, 0.6));
-        }
-
-        .contact-item h3 {
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .contact-item p, .contact-item a {
-            color: rgba(255,255,255,0.9);
-            text-decoration: none;
-            font-size: 1.15rem;
-            line-height: 2;
-        }
-
-        .contact-item a {
-            display: inline-block;
-            padding: 0.5rem 0;
-            transition: all 0.3s;
-            position: relative;
-            font-weight: 600;
-        }
-
-        .contact-phone {
-            font-size: 1.4rem !important;
-            font-weight: 700 !important;
-            color: #a8d5ff !important;
-        }
-
-        .contact-email {
-            font-size: 1.2rem !important;
-            color: #4a90e2 !important;
-        }
-
-        .devis-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #4a90e2 0%, #2c5aa0 100%);
-            color: white;
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-top: 1.5rem;
-            transition: all 0.4s;
-            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.4);
-        }
-
-            .devis-button:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 15px 40px rgba(74, 144, 226, 0.6);
-            }
-
-        .map-container {
-            margin-top: 3rem;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
-            border: 2px solid rgba(74, 144, 226, 0.3);
-        }
-
-            .map-container iframe {
-                width: 100%;
-                height: 450px;
-                border: none;
-            }
-
-        .contact-item a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #a8d5ff;
-            transition: width 0.3s;
-        }
-
-        .contact-item a:hover::after {
-            width: 100%;
-        }
-
-        .contact-item a:hover {
-            color: #a8d5ff;
-        }
-
-        footer {
-            background: rgba(10, 25, 41, 0.98);
-            backdrop-filter: blur(20px);
-            color: white;
-            text-align: center;
-            padding: 3rem 2rem;
-            border-top: 1px solid rgba(74, 144, 226, 0.3);
-        }
-
-            footer p {
-                margin: 0.7rem 0;
-                opacity: 0.8;
-            }
-
-        .scroll-top {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            background: linear-gradient(135deg, #4a90e2 0%, #2c5aa0 100%);
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            cursor: pointer;
-            opacity: 0;
-            transition: all 0.4s;
-            z-index: 999;
-            box-shadow: 0 10px 40px rgba(74, 144, 226, 0.4);
-            border: 2px solid rgba(255,255,255,0.2);
-        }
-
-            .scroll-top.visible {
-                opacity: 1;
-            }
-
-            .scroll-top:hover {
-                background: linear-gradient(135deg, #2c5aa0 0%, #1a3d6b 100%);
-                transform: translateY(-8px);
-                box-shadow: 0 15px 50px rgba(74, 144, 226, 0.6);
-            }
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>ACA ÉlectroBuild | Électricien Professionnel à Boumerdès, Alger & Tizi Ouzou</title>
+    <meta name="description" content="ACA ÉlectroBuild : votre expert en électricité bâtiment, vidéosurveillance, sécurité incendie et travaux intérieurs à Boumerdès, Alger et Tizi Ouzou. Devis gratuit 24/7. Tél: +213 540 746 881">
+    <meta name="keywords" content="électricien Boumerdès, électricien Alger, électricien Tizi Ouzou, installation électrique Algérie, vidéosurveillance, sécurité incendie SSI, contrôle accès, travaux bâtiment">
+    <meta name="author" content="ACA ÉlectroBuild">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://acaelecrobuild-byte.github.io/ACAElectroBuild/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://acaelecrobuild-byte.github.io/ACAElectroBuild/">
+    <meta property="og:title" content="ACA ÉlectroBuild | Électricien Professionnel en Algérie">
+    <meta property="og:description" content="Expert en électricité, vidéosurveillance et sécurité à Boumerdès, Alger et Tizi Ouzou. Devis gratuit - Disponible 24/7.">
+    <meta property="og:locale" content="fr_DZ">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ACA ÉlectroBuild | Électricien Professionnel en Algérie">
+    <meta name="twitter:description" content="Expert en électricité, vidéosurveillance et sécurité à Boumerdès, Alger et Tizi Ouzou. Devis gratuit 24/7.">
+
+    <!-- Geo Tags pour SEO local -->
+    <meta name="geo.region" content="DZ-35">
+    <meta name="geo.placename" content="Boumerdès, Algeria">
+
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' rx='15' width='100' height='100'/><path fill='white' d='M50 15L25 55h20v30l25-40H50V15z'/></svg>">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ACA ÉlectroBuild",
+        "description": "Expert en électricité bâtiment et industrielle, vidéosurveillance, sécurité incendie, contrôle d'accès et travaux intérieurs en Algérie.",
+        "url": "https://acaelecrobuild-byte.github.io/ACAElectroBuild/",
+        "telephone": ["+213540746881", "+213773927014"],
+        "email": "acaelecrobuild@gmail.com",
+        "address": {"@type": "PostalAddress", "addressRegion": "Boumerdès", "addressCountry": "DZ"},
+        "areaServed": [{"@type": "City", "name": "Boumerdès"}, {"@type": "City", "name": "Alger"}, {"@type": "City", "name": "Tizi Ouzou"}],
+        "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"], "opens": "08:00", "closes": "18:00"}],
+        "sameAs": ["https://www.facebook.com/profile.php?id=61586759348766", "https://www.instagram.com/acaelecrobuild/", "https://www.tiktok.com/@aca_electrobuild"]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Dans quelles wilayas intervenez-vous ?", "acceptedAnswer": {"@type": "Answer", "text": "Nous intervenons dans trois wilayas : Boumerdès, Alger et Tizi Ouzou."}},
+            {"@type": "Question", "name": "Proposez-vous des devis gratuits ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, nous proposons des devis 100% gratuits et sans engagement."}},
+            {"@type": "Question", "name": "Êtes-vous disponibles pour les urgences ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, nous sommes disponibles 24h/24 et 7j/7 pour les interventions d'urgence."}}
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gray-light: #e2e8f0;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --radius: 0.75rem;
+            --transition: all 0.3s ease;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+
+        /* Accessibility */
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+        :focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: var(--primary); color: var(--white); padding: 0.75rem 1.5rem; border-radius: var(--radius); z-index: 9999; transition: var(--transition); }
+        .skip-link:focus { top: 1rem; }
+
+        /* Typography */
+        h1, h2, h3 { font-weight: 700; line-height: 1.2; color: var(--dark); }
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
+        p { color: var(--gray); }
+        a { color: var(--primary); text-decoration: none; transition: var(--transition); }
+        a:hover { color: var(--primary-dark); }
+
+        /* Layout */
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: 5rem 0; }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-header p { max-width: 600px; margin: 1rem auto 0; font-size: 1.125rem; }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; font-size: 1rem; font-weight: 600; border-radius: var(--radius); border: none; cursor: pointer; transition: var(--transition); }
+        .btn svg { width: 1.25rem; height: 1.25rem; }
+        .btn-primary { background: var(--primary); color: var(--white); }
+        .btn-primary:hover { background: var(--primary-dark); color: var(--white); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+        .btn-secondary { background: var(--white); color: var(--primary); border: 2px solid var(--primary); }
+        .btn-secondary:hover { background: var(--primary); color: var(--white); }
+        .btn-cta { background: var(--secondary); color: var(--dark); }
+        .btn-cta:hover { background: #d97706; transform: translateY(-2px); }
+
+        /* Header */
+        header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: var(--shadow); z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; font-size: 1.5rem; font-weight: 700; color: var(--dark); }
+        .logo svg { width: 2.5rem; height: 2.5rem; }
+        .logo span { color: var(--primary); }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--dark); font-weight: 500; padding: 0.5rem; position: relative; }
+        .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--primary); transition: var(--transition); }
+        .nav-links a:hover::after { width: 100%; }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        .mobile-menu-btn svg { width: 1.5rem; height: 1.5rem; color: var(--dark); }
+
+        /* Hero */
+        #accueil { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); padding-top: 5rem; position: relative; overflow: hidden; }
+        #accueil::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+        .hero-content { position: relative; z-index: 1; max-width: 700px; }
+        .hero-content h1 { color: var(--white); margin-bottom: 1.5rem; }
+        .hero-content p { font-size: 1.25rem; color: rgba(255,255,255,0.9); margin-bottom: 2rem; }
+        .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2); }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2.5rem; font-weight: 700; color: var(--secondary); }
+        .stat-label { font-size: 0.875rem; color: rgba(255,255,255,0.8); margin-top: 0.25rem; }
+
+        /* Services */
+        #services { background: var(--white); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .service-card { background: var(--light); border-radius: var(--radius); padding: 2rem; transition: var(--transition); border: 1px solid var(--gray-light); }
+        .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+        .service-icon { width: 4rem; height: 4rem; background: var(--primary); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; }
+        .service-icon svg { width: 2rem; height: 2rem; color: var(--white); }
+        .service-card h3 { margin-bottom: 1rem; }
+
+        /* Why Us */
+        #pourquoi { background: linear-gradient(135deg, var(--dark) 0%, #334155 100%); color: var(--white); }
+        #pourquoi .section-header h2, #pourquoi .section-header p { color: var(--white); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .feature-card { text-align: center; padding: 2rem; background: rgba(255,255,255,0.05); border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.1); transition: var(--transition); }
+        .feature-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-5px); }
+        .feature-icon { width: 4rem; height: 4rem; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+        .feature-icon svg { width: 2rem; height: 2rem; color: var(--white); }
+        .feature-card h3 { color: var(--white); margin-bottom: 0.75rem; }
+        .feature-card p { color: rgba(255,255,255,0.7); }
+
+        /* Testimonials */
+        #temoignages { background: var(--light); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .testimonial-card { background: var(--white); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); border: 1px solid var(--gray-light); }
+        .testimonial-stars { display: flex; gap: 0.25rem; margin-bottom: 1rem; }
+        .testimonial-stars svg { width: 1.25rem; height: 1.25rem; color: var(--secondary); fill: var(--secondary); }
+        .testimonial-text { font-style: italic; color: var(--dark); margin-bottom: 1.5rem; line-height: 1.7; }
+        .testimonial-author { display: flex; align-items: center; gap: 1rem; }
+        .author-avatar { width: 3rem; height: 3rem; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 700; font-size: 1.25rem; }
+        .author-info h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+        .author-info p { font-size: 0.875rem; }
+
+        /* Zones */
+        #zones { background: var(--white); }
+        .zones-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .zone-card { background: var(--light); border-radius: var(--radius); padding: 2rem; text-align: center; border: 2px solid var(--gray-light); transition: var(--transition); }
+        .zone-card:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+        .zone-icon { width: 4rem; height: 4rem; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+        .zone-icon svg { width: 2rem; height: 2rem; color: var(--white); }
+        .zone-card p { margin-bottom: 1.5rem; }
+        .zone-card a { font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .zone-card a svg { width: 1rem; height: 1rem; }
+
+        /* FAQ */
+        #faq { background: var(--light); }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--white); border-radius: var(--radius); margin-bottom: 1rem; border: 1px solid var(--gray-light); overflow: hidden; }
+        .faq-question { width: 100%; padding: 1.5rem; background: none; border: none; text-align: left; font-size: 1.0625rem; font-weight: 600; color: var(--dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: var(--transition); }
+        .faq-question:hover { color: var(--primary); }
+        .faq-question svg { width: 1.5rem; height: 1.5rem; transition: var(--transition); flex-shrink: 0; }
+        .faq-item.active .faq-question svg { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-item.active .faq-answer { max-height: 500px; }
+        .faq-answer p { padding: 0 1.5rem 1.5rem; line-height: 1.7; }
+
+        /* Contact */
+        #contact { background: var(--white); }
+        .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+        .contact-item { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+        .contact-item-icon { width: 3rem; height: 3rem; background: var(--primary); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .contact-item-icon svg { width: 1.5rem; height: 1.5rem; color: var(--white); }
+        .contact-item-content h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+        .contact-item-content p, .contact-item-content a { color: var(--gray); font-size: 0.9375rem; }
+        .social-links { display: flex; gap: 1rem; margin-top: 2rem; }
+        .social-link { width: 3rem; height: 3rem; background: var(--light); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; transition: var(--transition); border: 1px solid var(--gray-light); }
+        .social-link:hover { background: var(--primary); border-color: var(--primary); }
+        .social-link:hover svg { color: var(--white); }
+        .social-link svg { width: 1.25rem; height: 1.25rem; color: var(--dark); transition: var(--transition); }
+
+        /* Form */
+        .contact-form { background: var(--light); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--gray-light); }
+        .contact-form h3 { margin-bottom: 1.5rem; }
+        .form-group { margin-bottom: 1.25rem; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--dark); }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.875rem 1rem; font-size: 1rem; border: 2px solid var(--gray-light); border-radius: var(--radius); background: var(--white); transition: var(--transition); }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+        /* Footer */
+        footer { background: var(--dark); color: var(--white); padding: 3rem 0 1.5rem; }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .footer-logo { display: flex; align-items: center; gap: 0.75rem; font-size: 1.25rem; font-weight: 700; color: var(--white); }
+        .footer-logo svg { width: 2rem; height: 2rem; }
+        .footer-logo span { color: #3b82f6; }
+        .footer-text { color: rgba(255,255,255,0.6); font-size: 0.875rem; }
+
+        /* Back to Top */
+        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; width: 3rem; height: 3rem; background: var(--primary); color: var(--white); border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 999; }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--primary-dark); transform: translateY(-3px); }
+        .back-to-top svg { width: 1.5rem; height: 1.5rem; }
+
+        /* Responsive */
+        @media (max-width: 992px) { .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; } }
         @media (max-width: 768px) {
-            nav ul {
-                display: none;
-            }
-
-            .hero h2 {
-                font-size: 2.2rem;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-            }
-
-            .section-title {
-                font-size: 2.2rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .cta-button {
-                width: 100%;
-                max-width: 320px;
-            }
-
-            .stats-container {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            @media (max-width: 600px) {
-                .stats-container {
-                    grid-template-columns: 1fr;
-                }
-
-                .stat-item::after {
-                    display: none;
-                }
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .container {
-                padding: 4rem 1.5rem;
-            }
-
-            .social-buttons {
-                gap: 1rem;
-            }
-
-            .social-btn {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.95rem;
-                min-width: 140px;
-            }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 1rem; gap: 0; box-shadow: var(--shadow); }
+            .nav-links.active { display: flex; }
+            .nav-links li { border-bottom: 1px solid var(--gray-light); }
+            .nav-links a { display: block; padding: 1rem; }
+            .mobile-menu-btn { display: block; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .hero-buttons { flex-direction: column; }
+            .form-row { grid-template-columns: 1fr; }
         }
+        @media (max-width: 480px) { section { padding: 3rem 0; } .stats { gap: 1rem; } .stat-number { font-size: 2rem; } }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="nav-container">
-            <div class="logo-container">
-                <img src="https://i.imgur.com/2VnROY9.png" alt="ACA ÉlectroBuild Logo" class="logo-image">
-                <div class="logo-text">
-                    <h1>ACA ÉLECTROBUILD</h1>
-                    <p>Votre confort, notre expertise technique</p>
-                </div>
-            </div>
-            <nav aria-label="Navigation principale">
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#pourquoi">Pourquoi Nous</a></li>
-                    <li><a href="#zones">Zones</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="container" role="navigation" aria-label="Navigation principale">
+            <a href="#accueil" class="logo" aria-label="ACA ÉlectroBuild - Accueil">
+                <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#2563eb"/><path d="M20 6L10 22h8v12l10-16h-8V6z" fill="white"/></svg>
+                <span>ACA</span> ÉlectroBuild
+            </a>
+            <button class="mobile-menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+            <ul class="nav-links" id="nav-menu" role="menubar">
+                <li role="none"><a href="#accueil" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="#services" role="menuitem">Services</a></li>
+                <li role="none"><a href="#pourquoi" role="menuitem">Pourquoi Nous</a></li>
+                <li role="none"><a href="#temoignages" role="menuitem">Avis Clients</a></li>
+                <li role="none"><a href="#zones" role="menuitem">Zones</a></li>
+                <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="accueil" class="hero">
-        <div class="hero-content">
-            <h2>Excellence en Solutions Électriques & Bâtiment</h2>
-            <p>Expertise professionnelle au service de votre confort et sécurité</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="cta-button">Demander un Devis Gratuit</a>
-                <a href="#services" class="cta-button secondary">Découvrir Nos Services</a>
-            </div>
-        </div>
-    </section>
-
-    <div class="stats-bar">
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Projets Réalisés</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Clients Satisfaits</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">3</div>
-                <div class="stat-label">Wilayas Couvertes</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Disponibilité</div>
-            </div>
-        </div>
-    </div>
-
-    <section id="services" class="container">
-        <h2 class="section-title">Nos Services Professionnels</h2>
-        <p class="section-subtitle">Des solutions complètes et personnalisées pour tous vos projets électriques et d'aménagement</p>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-image-container">
-                    <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg" alt="Installation électrique résidentielle et industrielle" class="service-image">
-                </div>
-                <div class="service-content">
-                    <div class="service-icon">⚡</div>
-                    <h3>Électricité Bâtiment & Industrielle</h3>
-                    <p>Installations neuves, dépannages urgents et rénovations complètes. Expertise en électricité résidentielle et industrielle avec garantie de conformité aux normes.</p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2019/08/08/16/51/network-4393368_1280.jpg" alt="Réseaux informatiques et fibre optique" class="service-image">
-                </div>
-                <div class="service-content">
-                    <div class="service-icon">🌐</div>
-                    <h3>Réseaux & Télécommunications</h3>
-                    <p>Déploiement de réseaux informatiques, téléphoniques et fibre optique. Infrastructure complète pour une connectivité optimale et performante.</p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2018/05/18/00/15/alarm-3410065_1280.jpg" alt="Système de détection incendie" class="service-image">
-                </div>
-                <div class="service-content">
-                    <div class="service-icon">🔥</div>
-                    <h3>Systèmes de Sécurité Incendie</h3>
-                    <p>Installation de SSI conformes aux normes algériennes. Protection optimale de vos locaux avec détection et alarmes performantes.</p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2016/01/17/02/08/cctv-1144371_1280.jpg" alt="Caméras de surveillance haute définition" class="service-image">
-                </div>
-                <div class="service-content">
-                    <div class="service-icon">📹</div>
-                    <h3>Vidéosurveillance</h3>
-                    <p>Systèmes de caméras analogiques et IP haute définition. Surveillance 24/7 avec enregistrement et accès à distance pour votre sérénité.</p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-image-container">
-                    <img src="https://images.unsplash.com/photo-1697382608786-bcf4c113b86e?w=800&h=400&fit=crop" alt="Contrôle d'accès biométrique et badges" class="service-image">
-                </div>
-                <div class="service-content">
-                    <div class="service-icon">🔐</div>
-                    <h3>Contrôle d'Accès & Anti-Intrusion</h3>
-                    <p>Solutions modernes de gestion des accès et protection anti-intrusion. Sécurisez vos espaces avec des technologies avancées et fiables.</p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2023/05/06/08/34/office-7973868_1280.jpg" alt="Aménagement intérieur : cloisons, sols, peinture" class="service-image">
-                </div>
-                <div class="service-content">
-                    <div class="service-icon">🏠</div>
-                    <h3>Travaux Intérieurs</h3>
-                    <p>Aménagement complet : BA13, PVC, aluminium, peinture, plomberie, chauffage et sols. Transformez vos espaces avec nos artisans qualifiés.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pourquoi" class="why-us-section">
-        <div class="container">
-            <h2 class="section-title">Pourquoi Choisir ACA ÉlectroBuild ?</h2>
-            <p class="section-subtitle">L'excellence et le professionnalisme au cœur de chaque projet</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Expertise Technique</h3>
-                    <p>Équipe qualifiée et certifiée avec une expérience solide dans tous les domaines électriques</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Intervention Rapide</h3>
-                    <p>Disponibilité et réactivité pour tous vos besoins urgents ou planifiés</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">✅</div>
-                    <h3>Garantie Qualité</h3>
-                    <p>Travaux conformes aux normes avec garantie et suivi post-installation</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Prix Compétitifs</h3>
-                    <p>Devis gratuits et tarifs transparents adaptés à votre budget</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="zones" class="zone-section">
-        <div class="container">
-            <h2 class="section-title">Nos Zones d'Intervention</h2>
-            <p class="section-subtitle">Nous intervenons dans trois wilayas pour vous servir au mieux</p>
-            <div class="zone-list">
-                <div class="zone-item">
-                    <h3>📍 Boumerdès</h3>
-                    <p>Service complet dans toute la wilaya</p>
-                    <a href="https://www.google.com/maps/place/Boumerdes,+Algeria" target="_blank" style="color: #a8d5ff; text-decoration: underline; margin-top: 1rem; display: inline-block;">Voir sur Google Maps</a>
-                </div>
-                <div class="zone-item">
-                    <h3>📍 Tizi Ouzou</h3>
-                    <p>Couverture intégrale de la région</p>
-                    <a href="https://www.google.com/maps/place/Tizi+Ouzou,+Algeria" target="_blank" style="color: #a8d5ff; text-decoration: underline; margin-top: 1rem; display: inline-block;">Voir sur Google Maps</a>
-                </div>
-                <div class="zone-item">
-                    <h3>📍 Alger</h3>
-                    <p>Intervention rapide dans la capitale</p>
-                    <a href="https://www.google.com/maps/place/Algiers,+Algeria" target="_blank" style="color: #a8d5ff; text-decoration: underline; margin-top: 1rem; display: inline-block;">Voir sur Google Maps</a>
-                </div>
-            </div>
-
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412664.4141837758!2d2.9380788!3d36.7537881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb26977ea683b%3A0xb5d0c1e3435fab!2sAlgiers%2C%20Algeria!5e0!3m2!1sen!2sdz!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Contactez-Nous</h2>
-            <p class="section-subtitle">Notre équipe est à votre écoute pour répondre à tous vos besoins</p>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <h3>Appelez-Nous</h3>
-                    <p><a href="tel:+213540746881" class="contact-phone">+213 540 746 881</a></p>
-                    <p><a href="tel:+213773927014" class="contact-phone">+213 773 927 014</a></p>
-                    <p style="font-size: 0.95rem; margin-top: 1rem; color: rgba(255,255,255,0.7);">Disponible 24/7 pour urgences</p>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:acaelecrobuild@gmail.com" class="contact-email">acaelecrobuild@gmail.com</a></p>
-                    <p style="font-size: 0.95rem; margin-top: 1rem; color: rgba(255,255,255,0.7);">Réponse sous 24h</p>
-                    <a href="mailto:acaelecrobuild@gmail.com?subject=Demande de Devis&body=Bonjour,%0D%0A%0D%0AJe souhaite obtenir un devis pour:%0D%0A%0D%0A[Décrivez votre projet]%0D%0A%0D%0AMerci" class="devis-button">Demander un Devis</a>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">🕒</div>
-                    <h3>Horaires</h3>
-                    <p style="font-size: 1.15rem;">Lundi - Samedi</p>
-                    <p style="font-size: 1.3rem; font-weight: 700; color: #a8d5ff;">8h00 - 18h00</p>
-                    <p style="font-size: 0.95rem; margin-top: 1rem; color: rgba(255,255,255,0.7);">Urgences : 24/7</p>
-                </div>
-            </div>
-
-            <!-- Section Réseaux Sociaux + Widgets -->
-            <div class="social-contact">
-                <h3>📱 Retrouvez-nous sur les réseaux</h3>
-                <div class="social-buttons">
-                    <a href="https://wa.me/213773927014?text=Bonjour%20ACA%20ÉlectroBuild,%20je%20souhaite%20obtenir%20des%20informations" class="social-btn whatsapp-btn" target="_blank">
-                        <span class="social-icon">📱</span>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="https://m.me/ACAElectroBuild" class="social-btn messenger-btn" target="_blank">
-                        <span class="social-icon">💬</span>
-                        <span>Messenger</span>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61586759348766" class="social-btn facebook-btn" target="_blank">
-                        <span class="social-icon">f</span>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://www.instagram.com/acaelecrobuild/" class="social-btn instagram-btn" target="_blank">
-                        <span class="social-icon">📷</span>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://www.tiktok.com/@aca_electrobuild" class="social-btn tiktok-btn" target="_blank">
-                        <span class="social-icon">🎵</span>
-                        <span>TikTok</span>
-                    </a>
-                </div>
-
-                <!-- Widgets sociaux -->
-                <div class="social-widgets" style="margin-top: 3rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 1200px; margin-left: auto; margin-right: auto;">
-
-                    <!-- TikTok Embed -->
-                    <div class="tiktok-widget" style="flex: 1; min-width: 300px; background: rgba(20, 30, 50, 0.6); padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(74, 144, 226, 0.3);">
-                        <h4 style="color: #a8d5ff; text-align: center; margin-bottom: 1.2rem; font-size: 1.3rem;">Nos dernières vidéos TikTok</h4>
-                        <div style="display: flex; justify-content: center;">
-                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aca_electrobuild" data-embed-type="profile" style="max-width: 400px; width: 100%;">
-                                <section></section>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                    <!-- Instagram Placeholder -->
-                    <div class="instagram-widget" style="flex: 1; min-width: 300px; background: rgba(20, 30, 50, 0.6); padding: 1.5rem; border-radius: 16px; border: 1px solid rgba(225, 48, 108, 0.3); display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                        <div style="font-size: 4rem; margin-bottom: 1.2rem; color: #E1306C;">📷</div>
-                        <h4 style="color: #E1306C; text-align: center; margin-bottom: 1rem; font-size: 1.3rem;">Suivez-nous sur Instagram</h4>
-                        <p style="color: rgba(255,255,255,0.85); text-align: center; margin-bottom: 1.5rem; max-width: 300px;">
-                            Découvrez nos réalisations, avant/après et conseils en direct !
-                        </p>
-                        <a href="https://www.instagram.com/acaelecrobuild/" target="_blank" class="cta-button" style="background: linear-gradient(135deg, #E1306C 0%, #C13584 100%); padding: 0.8rem 2rem; font-size: 1rem;">
-                            Voir notre profil
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="accueil" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title">Excellence en Solutions Électriques & Bâtiment</h1>
+                    <p>Expertise professionnelle au service de votre confort et sécurité. Installation électrique, vidéosurveillance, sécurité incendie et travaux d'aménagement à <strong>Boumerdès</strong>, <strong>Alger</strong> et <strong>Tizi Ouzou</strong>.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-cta">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            Demander un Devis Gratuit
+                        </a>
+                        <a href="#services" class="btn btn-secondary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                            Découvrir Nos Services
                         </a>
                     </div>
                 </div>
+                <div class="stats" role="list" aria-label="Nos chiffres clés">
+                    <div class="stat-item" role="listitem"><div class="stat-number">50+</div><div class="stat-label">Projets Réalisés</div></div>
+                    <div class="stat-item" role="listitem"><div class="stat-number">100%</div><div class="stat-label">Clients Satisfaits</div></div>
+                    <div class="stat-item" role="listitem"><div class="stat-number">3</div><div class="stat-label">Wilayas Couvertes</div></div>
+                    <div class="stat-item" role="listitem"><div class="stat-number">24/7</div><div class="stat-label">Disponibilité</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="services-title">Nos Services Professionnels</h2>
+                    <p>Des solutions complètes et personnalisées pour tous vos projets électriques et d'aménagement</p>
+                </div>
+                <div class="services-grid" role="list">
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <h3>Électricité Bâtiment & Industrielle</h3>
+                        <p>Installations neuves, dépannages urgents et rénovations complètes. Expertise en électricité résidentielle et industrielle avec garantie de conformité aux normes algériennes.</p>
+                    </article>
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                        <h3>Réseaux & Télécommunications</h3>
+                        <p>Déploiement de réseaux informatiques, téléphoniques et fibre optique. Infrastructure complète pour une connectivité optimale et performante.</p>
+                    </article>
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg></div>
+                        <h3>Systèmes de Sécurité Incendie</h3>
+                        <p>Installation de SSI conformes aux normes algériennes. Protection optimale de vos locaux avec détection automatique et alarmes performantes.</p>
+                    </article>
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                        <h3>Vidéosurveillance HD</h3>
+                        <p>Systèmes de caméras analogiques et IP haute définition. Surveillance 24/7 avec enregistrement et accès à distance pour votre sérénité.</p>
+                    </article>
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+                        <h3>Contrôle d'Accès & Anti-Intrusion</h3>
+                        <p>Solutions modernes de gestion des accès et protection anti-intrusion. Sécurisez vos espaces avec des technologies avancées et fiables.</p>
+                    </article>
+                    <article class="service-card" role="listitem">
+                        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+                        <h3>Travaux Intérieurs</h3>
+                        <p>Aménagement complet : BA13, PVC, aluminium, peinture, plomberie, chauffage et sols. Transformez vos espaces avec nos artisans qualifiés.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="pourquoi" aria-labelledby="pourquoi-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="pourquoi-title">Pourquoi Choisir ACA ÉlectroBuild ?</h2>
+                    <p>L'excellence et le professionnalisme au coeur de chaque projet</p>
+                </div>
+                <div class="features-grid" role="list">
+                    <div class="feature-card" role="listitem">
+                        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                        <h3>Expertise Technique</h3>
+                        <p>Équipe qualifiée et certifiée avec une expérience solide dans tous les domaines électriques</p>
+                    </div>
+                    <div class="feature-card" role="listitem">
+                        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <h3>Intervention Rapide</h3>
+                        <p>Disponibilité et réactivité pour tous vos besoins urgents ou planifiés</p>
+                    </div>
+                    <div class="feature-card" role="listitem">
+                        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+                        <h3>Garantie Qualité</h3>
+                        <p>Travaux conformes aux normes avec garantie et suivi post-installation</p>
+                    </div>
+                    <div class="feature-card" role="listitem">
+                        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+                        <h3>Prix Compétitifs</h3>
+                        <p>Devis gratuits et tarifs transparents adaptés à votre budget</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="temoignages" aria-labelledby="temoignages-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="temoignages-title">Ce Que Disent Nos Clients</h2>
+                    <p>La satisfaction de nos clients est notre meilleure référence</p>
+                </div>
+                <div class="testimonials-grid" role="list">
+                    <article class="testimonial-card" role="listitem">
+                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Excellent travail pour l'installation électrique de notre nouvelle maison à Boumerdès. Équipe ponctuelle, professionnelle et travail soigné. Je recommande vivement !"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">K</div>
+                            <div class="author-info"><h4>Karim B.</h4><p>Propriétaire à Boumerdès</p></div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card" role="listitem">
+                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"ACA ÉlectroBuild a installé notre système de vidéosurveillance et d'alarme dans notre commerce. Travail impeccable et service après-vente réactif. Merci !"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">S</div>
+                            <div class="author-info"><h4>Samira M.</h4><p>Commerçante à Alger</p></div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card" role="listitem">
+                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"Intervention rapide pour une panne urgente un dimanche soir. Très professionnel et tarif raisonnable. Une entreprise de confiance à Tizi Ouzou."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">Y</div>
+                            <div class="author-info"><h4>Yacine A.</h4><p>Particulier à Tizi Ouzou</p></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zones Section -->
+        <section id="zones" aria-labelledby="zones-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="zones-title">Nos Zones d'Intervention</h2>
+                    <p>Nous intervenons dans trois wilayas pour vous servir au mieux</p>
+                </div>
+                <div class="zones-grid" role="list">
+                    <div class="zone-card" role="listitem">
+                        <div class="zone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <h3>Boumerdès</h3>
+                        <p>Service complet dans toute la wilaya</p>
+                        <a href="https://www.google.com/maps/place/Boumerdes,+Algeria" target="_blank" rel="noopener noreferrer">Voir sur Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                    </div>
+                    <div class="zone-card" role="listitem">
+                        <div class="zone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <h3>Tizi Ouzou</h3>
+                        <p>Couverture intégrale de la région</p>
+                        <a href="https://www.google.com/maps/place/Tizi+Ouzou,+Algeria" target="_blank" rel="noopener noreferrer">Voir sur Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                    </div>
+                    <div class="zone-card" role="listitem">
+                        <div class="zone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <h3>Alger</h3>
+                        <p>Intervention rapide dans la capitale</p>
+                        <a href="https://www.google.com/maps/place/Algiers,+Algeria" target="_blank" rel="noopener noreferrer">Voir sur Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="faq-title">Questions Fréquentes</h2>
+                    <p>Trouvez rapidement les réponses à vos questions</p>
+                </div>
+                <div class="faq-list" role="list">
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false">Dans quelles wilayas intervenez-vous ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+                        <div class="faq-answer"><p>Nous intervenons dans trois wilayas : <strong>Boumerdès</strong>, <strong>Alger</strong> et <strong>Tizi Ouzou</strong>. Nous couvrons l'ensemble de ces régions pour tous types de travaux électriques, de sécurité et d'aménagement intérieur.</p></div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false">Proposez-vous des devis gratuits ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+                        <div class="faq-answer"><p>Oui, nous proposons des <strong>devis 100% gratuits et sans engagement</strong>. Contactez-nous par téléphone au <a href="tel:+213540746881">+213 540 746 881</a> ou par email pour recevoir votre devis personnalisé sous 24h.</p></div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false">Êtes-vous disponibles pour les urgences ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+                        <div class="faq-answer"><p>Oui, nous sommes disponibles <strong>24h/24 et 7j/7</strong> pour les interventions d'urgence électrique. Appelez le <a href="tel:+213773927014">+213 773 927 014</a> pour une assistance immédiate.</p></div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false">Quels types de travaux électriques réalisez-vous ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+                        <div class="faq-answer"><p>Nous réalisons tous types de travaux électriques : installations neuves, rénovations, mises aux normes, dépannages, tableaux électriques, éclairage intérieur et extérieur, prises et interrupteurs, ainsi que l'électricité industrielle.</p></div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false">Vos installations sont-elles conformes aux normes ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+                        <div class="faq-answer"><p>Absolument. Toutes nos installations sont réalisées dans le <strong>strict respect des normes algériennes</strong> en vigueur. Nous vous fournissons une garantie sur nos travaux et un suivi post-installation.</p></div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false">Proposez-vous un service après-vente ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+                        <div class="faq-answer"><p>Oui, nous assurons un <strong>service après-vente complet</strong> : maintenance préventive, dépannage, mise à jour des systèmes de sécurité, et support technique. Votre satisfaction est notre priorité.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="contact-title">Contactez-Nous</h2>
+                    <p>Notre équipe est à votre écoute pour répondre à tous vos besoins</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Nos Coordonnées</h3>
+                        <div class="contact-item">
+                            <div class="contact-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+                            <div class="contact-item-content">
+                                <h4>Téléphone</h4>
+                                <p><a href="tel:+213540746881">+213 540 746 881</a><br><a href="tel:+213773927014">+213 773 927 014</a></p>
+                                <p><small>Disponible 24/7 pour urgences</small></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <p><a href="/cdn-cgi/l/email-protection#19787a787c757c7a6b767b6c70757d597e74787075377a7674"><span class="__cf_email__" data-cfemail="fc9d9f9d9990999f8e939e89959098bc9b919d9590d29f9391">[email&#160;protected]</span></a></p>
+                                <p><small>Réponse sous 24h</small></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                            <div class="contact-item-content">
+                                <h4>Horaires</h4>
+                                <p>Lundi - Samedi : 8h00 - 18h00</p>
+                                <p><small>Urgences : 24/7</small></p>
+                            </div>
+                        </div>
+                        <h3 style="margin-top: 2rem;">Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="https://wa.me/213773927014" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                            <a href="https://www.facebook.com/profile.php?id=61586759348766" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                            <a href="https://www.instagram.com/acaelecrobuild/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                            <a href="https://www.tiktok.com/@aca_electrobuild" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Demander un Devis Gratuit</h3>
+                        <form action="https://formsubmit.co/acaelecrobuild@gmail.com" method="POST" id="devis-form">
+                            <input type="hidden" name="_subject" value="Nouvelle demande de devis - ACA ÉlectroBuild">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nom">Nom complet *</label>
+                                    <input type="text" id="nom" name="nom" required autocomplete="name" placeholder="Votre nom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone">Téléphone *</label>
+                                    <input type="tel" id="telephone" name="telephone" required autocomplete="tel" placeholder="0540 000 000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="votre@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Type de service *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="electricite">Électricité Bâtiment & Industrielle</option>
+                                    <option value="reseaux">Réseaux & Télécommunications</option>
+                                    <option value="incendie">Sécurité Incendie (SSI)</option>
+                                    <option value="videosurveillance">Vidéosurveillance</option>
+                                    <option value="acces">Contrôle d'Accès & Anti-Intrusion</option>
+                                    <option value="travaux">Travaux Intérieurs</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="wilaya">Wilaya *</label>
+                                <select id="wilaya" name="wilaya" required>
+                                    <option value="">Sélectionnez votre wilaya</option>
+                                    <option value="boumerdes">Boumerdès</option>
+                                    <option value="alger">Alger</option>
+                                    <option value="tizi-ouzou">Tizi Ouzou</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Description du projet *</label>
+                                <textarea id="message" name="message" required placeholder="Décrivez votre projet ou besoin..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                                Envoyer ma demande
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#accueil" class="footer-logo" aria-label="ACA ÉlectroBuild - Retour à l'accueil">
+                    <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#3b82f6"/><path d="M20 6L10 22h8v12l10-16h-8V6z" fill="white"/></svg>
+                    <span>ACA</span> ÉlectroBuild
+                </a>
+                <p class="footer-text">© 2026 ACA ÉlectroBuild. Tous droits réservés.</p>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p style="font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem;">ACA ÉLECTROBUILD</p>
-        <p>Votre confort, notre expertise technique</p>
-        <p style="margin-top: 1.5rem;">&copy; 2026 ACA ÉlectroBuild. Tous droits réservés.</p>
     </footer>
 
-    <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+    <button class="back-to-top" aria-label="Retour en haut de la page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
-    <!-- Script officiel TikTok Embed -->
-    <script async src="https://www.tiktok.com/embed.js"></script>
-
-    <script>
-        window.addEventListener('scroll', function () {
-            const scrollTop = document.getElementById('scrollTop');
-            if (window.scrollY > 300) {
-                scrollTop.classList.add('visible');
-            } else {
-                scrollTop.classList.remove('visible');
-            }
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenuBtn.addEventListener('click', () => {
+            const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            });
         });
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
                 }
             });
         });
+
+        // Back to Top
+        const backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTopBtn.classList.toggle('visible', window.scrollY > 500);
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
     </script>
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+
+</script>
 </body>
 </html>
