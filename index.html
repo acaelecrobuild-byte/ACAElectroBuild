@@ -1,239 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="fr-DZ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACA ÉlectroBuild | Électricien Professionnel à Boumerdès, Alger & Tizi Ouzou</title>
+    
+    <!-- Meta Description -->
     <meta name="description" content="ACA ÉlectroBuild : votre expert en électricité bâtiment, vidéosurveillance, sécurité incendie et travaux intérieurs à Boumerdès, Alger et Tizi Ouzou. Devis gratuit 24/7.">
     <meta name="keywords" content="électricien Boumerdès, électricien Alger, électricien Tizi Ouzou, installation électrique Algérie, vidéosurveillance, sécurité incendie SSI">
     <meta name="author" content="ACA ÉlectroBuild">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://acaelecrobuild-byte.github.io/ACAElectroBuild/">
+    
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="ACA ÉlectroBuild | Électricien Professionnel en Algérie">
     <meta property="og:description" content="Expert en électricité, vidéosurveillance et sécurité à Boumerdès, Alger et Tizi Ouzou. Devis gratuit 24/7.">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' rx='15' width='100' height='100'/><path fill='white' d='M50 15L25 55h20v30l25-40H50V15z'/></svg>">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ACA ÉlectroBuild","telephone":["+213540746881","+213773927014"],"email":"acaelecrobuild@gmail.com","address":{"@type":"PostalAddress","addressRegion":"Boumerdès","addressCountry":"DZ"},"areaServed":[{"@type":"City","name":"Boumerdès"},{"@type":"City","name":"Alger"},{"@type":"City","name":"Tizi Ouzou"}]}</script>
+    <meta property="og:image" content="https://acaelecrobuild-byte.github.io/ACAElectroBuild/images/logo.jpg">
+    <meta property="og:url" content="https://acaelecrobuild-byte.github.io/ACAElectroBuild/">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ACA ÉlectroBuild | Électricien Professionnel en Algérie">
+    <meta name="twitter:description" content="Expert en électricité, vidéosurveillance et sécurité à Boumerdès, Alger et Tizi Ouzou.">
+    <meta name="twitter:image" content="https://acaelecrobuild-byte.github.io/ACAElectroBuild/images/logo.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    
+    <!-- Preconnect pour les polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root{--primary:#2563eb;--primary-dark:#1d4ed8;--secondary:#f59e0b;--red:#dc2626;--red-dark:#b91c1c;--dark:#1e293b;--light:#f1f5f9;--gray:#64748b;--gray-light:#e2e8f0;--white:#fff;--shadow:0 4px 6px -1px rgb(0 0 0/0.1);--shadow-lg:0 10px 15px -3px rgb(0 0 0/0.1);--shadow-xl:0 25px 50px -12px rgb(0 0 0/0.25);--radius:1rem;--transition:all .3s ease}
-        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-        html{scroll-behavior:smooth}
-        body{font-family:'Poppins',sans-serif;line-height:1.6;color:var(--dark);background:var(--light);background-image:url("https://img.freepik.com/free-vector/dark-blue-geometric-shapes-background_23-2148313667.jpg?semt=ais_hybrid&w=740&q=80");background-size:cover;background-attachment:fixed;background-position:center}
-        .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-        :focus-visible{outline:3px solid var(--primary);outline-offset:2px}
-        h1,h2,h3{font-weight:700;line-height:1.2;color:var(--dark)}
-        h1{font-size:clamp(2rem,5vw,3.5rem)}h2{font-size:clamp(1.75rem,4vw,2.5rem)}h3{font-size:clamp(1.1rem,2.5vw,1.35rem)}
-        p{color:var(--gray)}a{color:var(--primary);text-decoration:none;transition:var(--transition)}a:hover{color:var(--primary-dark)}
-        .container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}
-        section{padding:5rem 0}
-        .section-header{text-align:center;margin-bottom:3rem}
-        .section-header p{max-width:600px;margin:1rem auto 0;font-size:1.1rem}
-        .btn{display:inline-flex;align-items:center;gap:.5rem;padding:1rem 2rem;font-size:1rem;font-weight:600;border-radius:var(--radius);border:none;cursor:pointer;transition:var(--transition);font-family:inherit}
-        .btn svg{width:1.25rem;height:1.25rem}
-        .btn-primary{background:var(--primary);color:var(--white)}
-        .btn-primary:hover{background:var(--primary-dark);color:var(--white);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
-        .btn-secondary{background:var(--white);color:var(--primary);border:2px solid var(--primary)}
-        .btn-secondary:hover{background:var(--primary);color:var(--white)}
-        .btn-cta{background:var(--secondary);color:var(--dark)}
-        .btn-cta:hover{background:#d97706;transform:translateY(-2px);box-shadow:var(--shadow-lg)}
-
-        /* Emergency Banner */
-        .emergency-banner{background:linear-gradient(90deg,var(--red) 0%,var(--red-dark) 100%);color:var(--white);padding:.875rem 0;text-align:center;font-weight:600;font-size:.95rem;position:fixed;top:0;left:0;right:0;z-index:1002;box-shadow:0 2px 10px rgba(220,38,38,.3)}
-        .emergency-banner a{color:var(--white);text-decoration:underline;font-weight:700}
-        .emergency-banner a:hover{color:var(--secondary)}
-        .emergency-banner .phone-icon{display:inline-block;animation:ring 1.5s ease-in-out infinite;margin-right:.5rem}
-        @keyframes ring{0%,100%{transform:rotate(0)}10%,30%{transform:rotate(-10deg)}20%,40%{transform:rotate(10deg)}50%{transform:rotate(0)}}
-
-        /* Header */
-        header{position:fixed;top:48px;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(10px);box-shadow:var(--shadow);z-index:1000}
-        nav{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0}
-
-        /* Logo */
-        .logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
-        .logo-icon{width:60px;height:60px;border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(37,99,235,.3)}
-        .logo-icon img{width:100%;height:100%;object-fit:cover}
-        .logo-text{display:flex;flex-direction:column;line-height:1.1}
-        .logo-text .brand{font-size:1.5rem;font-weight:800;color:var(--dark)}
-        .logo-text .brand span{color:var(--primary)}
-        .logo-text .tagline{font-size:.7rem;color:var(--gray);font-weight:500;letter-spacing:.5px}
-        .nav-links{display:flex;gap:1.5rem;list-style:none}
-        .nav-links a{color:var(--dark);font-weight:500;padding:.5rem;position:relative;font-size:.95rem}
-        .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--primary);transition:var(--transition)}
-        .nav-links a:hover::after{width:100%}
-        .mobile-menu-btn{display:none;background:none;border:none;cursor:pointer;padding:.5rem}
-        .mobile-menu-btn svg{width:1.5rem;height:1.5rem;color:var(--dark)}
-
-        /* Hero */
-        #accueil{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,var(--primary) 0%,#1e40af 100%);color:var(--white);padding-top:calc(48px + 80px + 3rem);position:relative;overflow:hidden}
-        #accueil::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");opacity:.8}
-        .hero-content{position:relative;z-index:1;max-width:700px}
-        .hero-content h1{color:var(--white);margin-bottom:1.5rem;text-shadow:0 2px 4px rgba(0,0,0,.1)}
-        .hero-content p{font-size:1.25rem;color:rgba(255,255,255,.9);margin-bottom:2rem}
-        .hero-buttons{display:flex;gap:1rem;flex-wrap:wrap}
-        .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.2)}
-        .stat-item{text-align:center}
-        .stat-number{font-size:2.5rem;font-weight:800;color:var(--secondary);text-shadow:0 2px 4px rgba(0,0,0,.2)}
-        .stat-label{font-size:.875rem;color:rgba(255,255,255,.8);margin-top:.25rem}
-
-        /* Services */
-        #services{background:var(--white);position:relative}
-        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-        .service-card{background:var(--white);border-radius:var(--radius);overflow:hidden;transition:var(--transition);border:1px solid var(--gray-light);box-shadow:var(--shadow)}
-        .service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl);border-color:var(--primary)}
-        .service-image{width:100%;height:200px;object-fit:cover;transition:var(--transition)}
-        .service-card:hover .service-image{transform:scale(1.05)}
-        .service-image-wrapper{overflow:hidden;position:relative}
-        .service-image-wrapper::after{content:'';position:absolute;bottom:0;left:0;right:0;height:50%;background:linear-gradient(to top,rgba(0,0,0,.3),transparent)}
-        .service-content{padding:1.5rem}
-        .service-icon{width:3.5rem;height:3.5rem;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;margin-top:-3rem;position:relative;z-index:1;box-shadow:0 4px 15px rgba(37,99,235,.3)}
-        .service-icon svg{width:1.5rem;height:1.5rem;color:var(--white)}
-        .service-card h3{margin-bottom:.75rem}
-        .service-card p{font-size:.9rem;line-height:1.6}
-
-        /* Why Us */
-        #pourquoi{background:linear-gradient(135deg,var(--dark) 0%,#0f172a 100%);color:var(--white);position:relative}
-        #pourquoi .section-header h2,#pourquoi .section-header p{color:var(--white);position:relative}
-        .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;position:relative}
-        .feature-card{text-align:center;padding:2.5rem 2rem;background:rgba(255,255,255,.05);border-radius:var(--radius);border:1px solid rgba(255,255,255,.1);transition:var(--transition);backdrop-filter:blur(10px)}
-        .feature-card:hover{background:rgba(255,255,255,.1);transform:translateY(-5px)}
-        .feature-icon{width:5rem;height:5rem;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;box-shadow:0 8px 25px rgba(37,99,235,.4)}
-        .feature-icon svg{width:2.5rem;height:2.5rem;color:var(--white)}
-        .feature-card h3{color:var(--white);margin-bottom:.75rem;font-size:1.25rem}
-        .feature-card p{color:rgba(255,255,255,.7)}
-
-        /* Testimonials */
-        #temoignages{background:var(--light)}
-        .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
-        .testimonial-card{background:var(--white);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);border:1px solid var(--gray-light);position:relative}
-        .testimonial-card::before{content:'"';position:absolute;top:1rem;right:1.5rem;font-size:5rem;color:var(--primary);opacity:.1;font-family:Georgia,serif;line-height:1}
-        .testimonial-stars{display:flex;gap:.25rem;margin-bottom:1rem}
-        .testimonial-stars svg{width:1.25rem;height:1.25rem;color:var(--secondary);fill:var(--secondary)}
-        .testimonial-text{font-style:italic;color:var(--dark);margin-bottom:1.5rem;line-height:1.7;position:relative}
-        .testimonial-author{display:flex;align-items:center;gap:1rem}
-        .author-avatar{width:3.5rem;height:3.5rem;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;font-size:1.25rem;box-shadow:0 4px 10px rgba(37,99,235,.3)}
-        .author-info h4{font-size:1rem;margin-bottom:.25rem}
-        .author-info p{font-size:.875rem}
-
-        /* Zones */
-        #zones{background:var(--white)}
-        .zones-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-        .zone-card{background:linear-gradient(135deg,var(--light) 0%,var(--white) 100%);border-radius:var(--radius);padding:2.5rem;text-align:center;border:2px solid var(--gray-light);transition:var(--transition)}
-        .zone-card:hover{border-color:var(--primary);transform:translateY(-5px);box-shadow:var(--shadow-lg)}
-        .zone-icon{width:5rem;height:5rem;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;box-shadow:0 8px 25px rgba(37,99,235,.3)}
-        .zone-icon svg{width:2.5rem;height:2.5rem;color:var(--white)}
-        .zone-card h3{font-size:1.5rem;margin-bottom:.5rem}
-        .zone-card p{margin-bottom:1.5rem}
-        .zone-card a{font-weight:600;display:inline-flex;align-items:center;gap:.5rem}
-        .zone-card a svg{width:1rem;height:1rem}
-
-        /* FAQ */
-        #faq{background:var(--light)}
-        .faq-list{max-width:800px;margin:0 auto}
-        .faq-item{background:var(--white);border-radius:var(--radius);margin-bottom:1rem;border:1px solid var(--gray-light);overflow:hidden;box-shadow:var(--shadow)}
-        .faq-question{width:100%;padding:1.5rem;background:none;border:none;text-align:left;font-size:1rem;font-weight:600;color:var(--dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:var(--transition);font-family:inherit}
-        .faq-question:hover{color:var(--primary);background:var(--light)}
-        .faq-question svg{width:1.5rem;height:1.5rem;transition:var(--transition);flex-shrink:0;color:var(--primary)}
-        .faq-item.active .faq-question svg{transform:rotate(180deg)}
-        .faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease}
-        .faq-item.active .faq-answer{max-height:500px}
-        .faq-answer p{padding:0 1.5rem 1.5rem;line-height:1.7}
-
-        /* Contact */
-        #contact{background:var(--white)}
-        .contact-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
-        .contact-info h3{font-size:1.5rem;margin-bottom:1.5rem;color:var(--dark)}
-        .contact-item{display:flex;gap:1rem;margin-bottom:1.5rem}
-        .contact-item-icon{width:3.5rem;height:3.5rem;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 15px rgba(37,99,235,.3)}
-        .contact-item-icon svg{width:1.5rem;height:1.5rem;color:var(--white)}
-        .contact-item-content h4{font-size:1rem;margin-bottom:.25rem}
-        .contact-item-content p,.contact-item-content a{color:var(--gray);font-size:.95rem}
-        .social-links{display:flex;gap:1rem;margin-top:2rem}
-        .social-link{width:3.5rem;height:3.5rem;background:var(--light);border-radius:12px;display:flex;align-items:center;justify-content:center;transition:var(--transition);border:1px solid var(--gray-light)}
-        .social-link:hover{background:var(--primary);border-color:var(--primary);transform:translateY(-3px);box-shadow:var(--shadow)}
-        .social-link:hover svg{color:var(--white)}
-        .social-link svg{width:1.5rem;height:1.5rem;color:var(--dark);transition:var(--transition)}
-
-        /* Form */
-        .contact-form{background:linear-gradient(135deg,var(--light) 0%,var(--white) 100%);padding:2.5rem;border-radius:var(--radius);border:1px solid var(--gray-light);box-shadow:var(--shadow)}
-        .contact-form h3{margin-bottom:1.5rem;font-size:1.5rem}
-        .form-group{margin-bottom:1.25rem}
-        .form-group label{display:block;font-weight:600;margin-bottom:.5rem;color:var(--dark);font-size:.95rem}
-        .form-group input,.form-group select,.form-group textarea{width:100%;padding:1rem 1.25rem;font-size:1rem;border:2px solid var(--gray-light);border-radius:12px;background:var(--white);transition:var(--transition);font-family:inherit}
-        .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
-        .form-group textarea{min-height:120px;resize:vertical}
-        .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-
-        /* Footer */
-        footer{background:linear-gradient(135deg,var(--dark) 0%,#0f172a 100%);color:var(--white);padding:3rem 0 1.5rem}
-        .footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-        .footer-logo{display:flex;align-items:center;gap:.75rem;font-size:1.25rem;font-weight:700;color:var(--white)}
-        .footer-logo svg{width:2.5rem;height:2.5rem}
-        .footer-text{color:rgba(255,255,255,.6);font-size:.875rem}
-
-        /* WhatsApp Float */
-        .whatsapp-float{position:fixed;bottom:100px;right:25px;z-index:999}
-        .whatsapp-btn{width:65px;height:65px;background:linear-gradient(135deg,#25d366 0%,#128c7e 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(37,211,102,.4);transition:var(--transition);animation:pulse-wa 2s infinite}
-        .whatsapp-btn:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(37,211,102,.5)}
-        .whatsapp-btn svg{width:35px;height:35px;color:white}
-        .whatsapp-tooltip{position:absolute;right:80px;top:50%;transform:translateY(-50%);background:var(--white);color:var(--dark);padding:.75rem 1rem;border-radius:10px;font-size:.875rem;font-weight:500;white-space:nowrap;box-shadow:var(--shadow-lg);opacity:0;visibility:hidden;transition:var(--transition)}
-        .whatsapp-tooltip::after{content:'';position:absolute;right:-8px;top:50%;transform:translateY(-50%);border:8px solid transparent;border-left-color:var(--white)}
-        .whatsapp-float:hover .whatsapp-tooltip{opacity:1;visibility:visible}
-        @keyframes pulse-wa{0%,100%{box-shadow:0 6px 20px rgba(37,211,102,.4)}50%{box-shadow:0 6px 30px rgba(37,211,102,.6),0 0 0 15px rgba(37,211,102,.1)}}
-
-        /* Back to Top */
-        .back-to-top{position:fixed;bottom:25px;right:25px;width:55px;height:55px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:var(--white);border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;visibility:hidden;transition:var(--transition);z-index:998;box-shadow:0 4px 15px rgba(37,99,235,.3)}
-        .back-to-top.visible{opacity:1;visibility:visible}
-        .back-to-top:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(37,99,235,.4)}
-        .back-to-top svg{width:1.5rem;height:1.5rem}
-
-        /* Responsive */
-        @media(max-width:992px){.contact-wrapper{grid-template-columns:1fr;gap:3rem}}
-        @media(max-width:768px){
-            .emergency-banner{font-size:.85rem;padding:.75rem 1rem}
-            header{top:44px}
-            #accueil{padding-top:calc(44px + 70px + 2rem)}
-            .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:1rem;gap:0;box-shadow:var(--shadow)}
-            .nav-links.active{display:flex}
-            .nav-links li{border-bottom:1px solid var(--gray-light)}
-            .nav-links a{display:block;padding:1rem}
-            .mobile-menu-btn{display:block}
-            .stats{grid-template-columns:repeat(2,1fr)}
-            .hero-buttons{flex-direction:column}
-            .form-row{grid-template-columns:1fr}
-            .services-grid{grid-template-columns:1fr}
-            .whatsapp-float{bottom:90px;right:15px}
-            .whatsapp-btn{width:55px;height:55px}
-            .whatsapp-btn svg{width:28px;height:28px}
-            .back-to-top{bottom:20px;right:15px;width:50px;height:50px}
-        }
-        @media(max-width:480px){section{padding:3rem 0}.stats{gap:1rem}.stat-number{font-size:2rem}.logo-icon{width:45px;height:45px}.logo-text .brand{font-size:1.25rem}}
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ACA ÉlectroBuild",
+        "telephone": ["+213540746881", "+213773927014"],
+        "email": "acaelecrobuild@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Boumerdès",
+            "addressCountry": "DZ"
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Boumerdès"},
+            {"@type": "City", "name": "Alger"},
+            {"@type": "City", "name": "Tizi Ouzou"}
+        ],
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "36.7376",
+            "longitude": "3.4787"
+        },
+        "openingHours": "Mo-Sa 08:00-18:00",
+        "priceRange": "DZ",
+        "image": "https://acaelecrobuild-byte.github.io/ACAElectroBuild/images/logo.jpg",
+        "url": "https://acaelecrobuild-byte.github.io/ACAElectroBuild/"
+    }
+    </script>
 </head>
 <body>
-    <!-- Emergency Red Banner -->
+    <!-- Bannière d'urgence -->
     <div class="emergency-banner" role="alert">
         <span class="phone-icon">&#128222;</span>
         Pour toutes vos interventions, appelez le <a href="tel:+213540746881">0540 746 881</a> — Disponible <strong>24h/24, 7j/7</strong>
     </div>
 
+    <!-- Header -->
     <header role="banner">
         <nav class="container" role="navigation" aria-label="Navigation principale">
             <a href="#accueil" class="logo" aria-label="ACA ÉlectroBuild - Accueil">
                 <div class="logo-icon">
-                    <img src="logo.jpeg" alt="Logo ACA ÉlectroBuild">
+                    <img src="images/logo.jpg" alt="Logo ACA ÉlectroBuild" width="60" height="60">
                 </div>
                 <div class="logo-text">
                     <div class="brand"><span>ACA</span> ÉlectroBuild</div>
                     <div class="tagline">Votre confort, notre expertise</div>
                 </div>
             </a>
+            
             <button class="mobile-menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
             </button>
+            
             <ul class="nav-links" id="nav-menu">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
@@ -247,6 +105,7 @@
     </header>
 
     <main id="main-content">
+        <!-- Section Hero -->
         <section id="accueil">
             <div class="container">
                 <div class="hero-content">
@@ -254,87 +113,157 @@
                     <p>Expertise professionnelle au service de votre confort et sécurité. Installation électrique, vidéosurveillance, sécurité incendie et travaux d'aménagement à <strong>Boumerdès</strong>, <strong>Alger</strong> et <strong>Tizi Ouzou</strong>.</p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-cta">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
                             Demander un Devis Gratuit
                         </a>
                         <a href="#services" class="btn btn-secondary">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
                             Découvrir Nos Services
                         </a>
                     </div>
                 </div>
+                
                 <div class="stats">
-                    <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Projets Réalisés</div></div>
-                    <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Clients Satisfaits</div></div>
-                    <div class="stat-item"><div class="stat-number">3</div><div class="stat-label">Wilayas Couvertes</div></div>
-                    <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Disponibilité</div></div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projets Réalisés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Clients Satisfaits</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Wilayas Couvertes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Disponibilité</div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Section Services -->
         <section id="services">
             <div class="container">
                 <div class="section-header">
                     <h2>Nos Services Professionnels</h2>
                     <p>Des solutions complètes et personnalisées pour tous vos projets électriques et d'aménagement</p>
                 </div>
+                
                 <div class="services-grid">
                     <article class="service-card">
                         <div class="service-image-wrapper">
-                            <img src="https://lecoinc.com/wp-content/uploads/2023/05/man-electrical-technician-working-switchboard-with-fuses.jpg" alt="Technicien électricien travaillant sur un tableau électrique" class="service-image" loading="lazy">
+                            <img src="images/service-electricite.jpg" 
+                                 alt="Technicien électricien travaillant sur un tableau électrique" 
+                                 class="service-image" 
+                                 loading="lazy">
                         </div>
                         <div class="service-content">
-                            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
                             <h3>Électricité Bâtiment & Industrielle</h3>
                             <p>Installations neuves, dépannages urgents et rénovations complètes. Expertise en électricité résidentielle et industrielle avec garantie de conformité aux normes algériennes.</p>
                         </div>
                     </article>
+
                     <article class="service-card">
                         <div class="service-image-wrapper">
-                            <img src="https://networkcablingsanjose.net/wp-content/uploads/2024/05/32891596_technician-connect-fiber-cable-network-to-switch-port-in-server-scaled.jpg" alt="Installation de câbles réseau et fibre optique" class="service-image" loading="lazy">
+                            <img src="images/service-reseaux.jpg" 
+                                 alt="Installation de câbles réseau et fibre optique" 
+                                 class="service-image" 
+                                 loading="lazy">
                         </div>
                         <div class="service-content">
-                            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                                </svg>
+                            </div>
                             <h3>Réseaux & Télécommunications</h3>
                             <p>Déploiement de réseaux informatiques, téléphoniques et fibre optique. Infrastructure complète pour une connectivité optimale et performante.</p>
                         </div>
                     </article>
+
                     <article class="service-card">
                         <div class="service-image-wrapper">
-                            <img src="https://innovanw.com/wp-content/uploads/2025/01/iStock-1215003852.jpg" alt="Système de détection incendie et alarme" class="service-image" loading="lazy">
+                            <img src="images/service-incendie.jpg" 
+                                 alt="Système de détection incendie et alarme" 
+                                 class="service-image" 
+                                 loading="lazy">
                         </div>
                         <div class="service-content">
-                            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg></div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
+                                </svg>
+                            </div>
                             <h3>Systèmes de Sécurité Incendie</h3>
                             <p>Installation de SSI conformes aux normes algériennes. Protection optimale de vos locaux avec détection automatique et alarmes performantes.</p>
                         </div>
                     </article>
+
                     <article class="service-card">
                         <div class="service-image-wrapper">
-                            <img src="https://locksvegas.com/wp-content/uploads/2021/12/iStock-618550358-scaled.jpg" alt="Installation de caméras de vidéosurveillance" class="service-image" loading="lazy">
+                            <img src="images/service-video.jpg" 
+                                 alt="Installation de caméras de vidéosurveillance" 
+                                 class="service-image" 
+                                 loading="lazy">
                         </div>
                         <div class="service-content">
-                            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 7l-7 5 7 5V7z"/>
+                                    <rect x="1" y="5" width="15" height="14" rx="2"/>
+                                </svg>
+                            </div>
                             <h3>Vidéosurveillance HD</h3>
                             <p>Systèmes de caméras analogiques et IP haute définition. Surveillance 24/7 avec enregistrement et accès à distance pour votre sérénité.</p>
                         </div>
                     </article>
+
                     <article class="service-card">
                         <div class="service-image-wrapper">
-                            <img src="https://butterflymx.com/wp-content/uploads/2021/07/using-keypad-to-open-door.jpg" alt="Système de contrôle d'accès avec clavier" class="service-image" loading="lazy">
+                            <img src="images/service-acces.jpg" 
+                                 alt="Système de contrôle d'accès avec clavier" 
+                                 class="service-image" 
+                                 loading="lazy">
                         </div>
                         <div class="service-content">
-                            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2"/>
+                                    <path d="M7 11V7a5 5 0 0110 0v4"/>
+                                </svg>
+                            </div>
                             <h3>Contrôle d'Accès & Anti-Intrusion</h3>
                             <p>Solutions modernes de gestion des accès et protection anti-intrusion. Sécurisez vos espaces avec des technologies avancées et fiables.</p>
                         </div>
                     </article>
+
                     <article class="service-card">
                         <div class="service-image-wrapper">
-                            <img src="https://snowconstructionla.com/wp-content/uploads/2024/04/house-renovation-services-1638945105-6108426.jpeg" alt="Travaux de rénovation intérieure" class="service-image" loading="lazy">
+                            <img src="images/service-travaux.jpg" 
+                                 alt="Travaux de rénovation intérieure" 
+                                 class="service-image" 
+                                 loading="lazy">
                         </div>
                         <div class="service-content">
-                            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                                    <path d="M9 22V12h6v10"/>
+                                </svg>
+                            </div>
                             <h3>Travaux Intérieurs</h3>
                             <p>Aménagement complet : BA13, PVC, aluminium, peinture, plomberie, chauffage et sols. Transformez vos espaces avec nos artisans qualifiés.</p>
                         </div>
@@ -343,30 +272,53 @@
             </div>
         </section>
 
+        <!-- Section Pourquoi Nous -->
         <section id="pourquoi">
             <div class="container">
                 <div class="section-header">
                     <h2>Pourquoi Choisir ACA ÉlectroBuild ?</h2>
-                    <p>L'excellence et le professionnalisme au coeur de chaque projet</p>
+                    <p>L'excellence et le professionnalisme au cœur de chaque projet</p>
                 </div>
+                
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
                         <h3>Expertise Technique</h3>
                         <p>Équipe qualifiée et certifiée avec une expérience solide dans tous les domaines électriques</p>
                     </div>
+
                     <div class="feature-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
                         <h3>Intervention Rapide</h3>
                         <p>Disponibilité et réactivité pour tous vos besoins urgents ou planifiés</p>
                     </div>
+
                     <div class="feature-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <path d="M22 4L12 14.01l-3-3"/>
+                            </svg>
+                        </div>
                         <h3>Garantie Qualité</h3>
                         <p>Travaux conformes aux normes avec garantie et suivi post-installation</p>
                     </div>
+
                     <div class="feature-card">
-                        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                        </div>
                         <h3>Prix Compétitifs</h3>
                         <p>Devis gratuits et tarifs transparents adaptés à votre budget</p>
                     </div>
@@ -374,148 +326,396 @@
             </div>
         </section>
 
+        <!-- Section Témoignages -->
         <section id="temoignages">
             <div class="container">
                 <div class="section-header">
                     <h2>Ce Que Disent Nos Clients</h2>
                     <p>La satisfaction de nos clients est notre meilleure référence</p>
                 </div>
+                
                 <div class="testimonials-grid">
                     <article class="testimonial-card">
-                        <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                        <div class="testimonial-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
                         <p class="testimonial-text">"Excellent travail pour l'installation électrique de notre nouvelle maison à Boumerdès. Équipe ponctuelle, professionnelle et travail soigné. Je recommande vivement !"</p>
-                        <div class="testimonial-author"><div class="author-avatar">K</div><div class="author-info"><h4>Karim B.</h4><p>Propriétaire à Boumerdès</p></div></div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">K</div>
+                            <div class="author-info">
+                                <h4>Karim B.</h4>
+                                <p>Propriétaire à Boumerdès</p>
+                            </div>
+                        </div>
                     </article>
+
                     <article class="testimonial-card">
-                        <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                        <div class="testimonial-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
                         <p class="testimonial-text">"ACA ÉlectroBuild a installé notre système de vidéosurveillance et d'alarme dans notre commerce. Travail impeccable et service après-vente réactif. Merci !"</p>
-                        <div class="testimonial-author"><div class="author-avatar">S</div><div class="author-info"><h4>Samira M.</h4><p>Commerçante à Alger</p></div></div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>Samira M.</h4>
+                                <p>Commerçante à Alger</p>
+                            </div>
+                        </div>
                     </article>
+
                     <article class="testimonial-card">
-                        <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                        <div class="testimonial-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
                         <p class="testimonial-text">"Intervention rapide pour une panne urgente un dimanche soir. Très professionnel et tarif raisonnable. Une entreprise de confiance à Tizi Ouzou."</p>
-                        <div class="testimonial-author"><div class="author-avatar">Y</div><div class="author-info"><h4>Yacine A.</h4><p>Particulier à Tizi Ouzou</p></div></div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">Y</div>
+                            <div class="author-info">
+                                <h4>Yacine A.</h4>
+                                <p>Particulier à Tizi Ouzou</p>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
+        <!-- Section Zones -->
         <section id="zones">
             <div class="container">
                 <div class="section-header">
                     <h2>Nos Zones d'Intervention</h2>
                     <p>Nous intervenons dans trois wilayas pour vous servir au mieux</p>
                 </div>
+                
                 <div class="zones-grid">
                     <div class="zone-card">
-                        <div class="zone-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <div class="zone-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
                         <h3>Boumerdès</h3>
                         <p>Service complet dans toute la wilaya</p>
-                        <a href="https://www.google.com/maps/place/Boumerdes,+Algeria" target="_blank" rel="noopener">Voir sur Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                        <a href="https://www.google.com/maps/place/Boumerdes,+Algeria" target="_blank" rel="noopener">
+                            Voir sur Google Maps
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
                     </div>
+
                     <div class="zone-card">
-                        <div class="zone-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <div class="zone-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
                         <h3>Tizi Ouzou</h3>
                         <p>Couverture intégrale de la région</p>
-                        <a href="https://www.google.com/maps/place/Tizi+Ouzou,+Algeria" target="_blank" rel="noopener">Voir sur Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                        <a href="https://www.google.com/maps/place/Tizi+Ouzou,+Algeria" target="_blank" rel="noopener">
+                            Voir sur Google Maps
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
                     </div>
+
                     <div class="zone-card">
-                        <div class="zone-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <div class="zone-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
                         <h3>Alger</h3>
                         <p>Intervention rapide dans la capitale</p>
-                        <a href="https://www.google.com/maps/place/Algiers,+Algeria" target="_blank" rel="noopener">Voir sur Google Maps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                        <a href="https://www.google.com/maps/place/Algiers,+Algeria" target="_blank" rel="noopener">
+                            Voir sur Google Maps
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Section FAQ -->
         <section id="faq">
             <div class="container">
                 <div class="section-header">
                     <h2>Questions Fréquentes</h2>
                     <p>Trouvez rapidement les réponses à vos questions</p>
                 </div>
+                
                 <div class="faq-list">
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">Dans quelles wilayas intervenez-vous ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-                        <div class="faq-answer"><p>Nous intervenons dans trois wilayas : <strong>Boumerdès</strong>, <strong>Alger</strong> et <strong>Tizi Ouzou</strong>. Nous couvrons l'ensemble de ces régions pour tous types de travaux électriques, de sécurité et d'aménagement intérieur.</p></div>
+                        <button class="faq-question" aria-expanded="false">
+                            Dans quelles wilayas intervenez-vous ?
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous intervenons dans trois wilayas : <strong>Boumerdès</strong>, <strong>Alger</strong> et <strong>Tizi Ouzou</strong>. Nous couvrons l'ensemble de ces régions pour tous types de travaux électriques, de sécurité et d'aménagement intérieur.</p>
+                        </div>
                     </div>
+
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">Proposez-vous des devis gratuits ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-                        <div class="faq-answer"><p>Oui, nous proposons des <strong>devis 100% gratuits et sans engagement</strong>. Contactez-nous par téléphone au <a href="tel:+213540746881">0540 746 881</a> ou par email à <a href="mailto:acaelecrobuild@gmail.com">acaelecrobuild@gmail.com</a> pour recevoir votre devis personnalisé sous 24h.</p></div>
+                        <button class="faq-question" aria-expanded="false">
+                            Proposez-vous des devis gratuits ?
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, nous proposons des <strong>devis 100% gratuits et sans engagement</strong>. Contactez-nous par téléphone au <a href="tel:+213540746881">0540 746 881</a> ou via le formulaire de contact pour recevoir votre devis personnalisé sous 24h.</p>
+                        </div>
                     </div>
+
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">Êtes-vous disponibles pour les urgences ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-                        <div class="faq-answer"><p>Oui, nous sommes disponibles <strong>24h/24 et 7j/7</strong> pour les interventions d'urgence électrique. Appelez le <a href="tel:+213773927014">0773 927 014</a> pour une assistance immédiate.</p></div>
+                        <button class="faq-question" aria-expanded="false">
+                            Êtes-vous disponibles pour les urgences ?
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, nous sommes disponibles <strong>24h/24 et 7j/7</strong> pour les interventions d'urgence électrique. Appelez le <a href="tel:+213773927014">0773 927 014</a> pour une assistance immédiate.</p>
+                        </div>
                     </div>
+
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">Quels types de travaux électriques réalisez-vous ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-                        <div class="faq-answer"><p>Nous réalisons tous types de travaux électriques : installations neuves, rénovations, mises aux normes, dépannages, tableaux électriques, éclairage intérieur et extérieur, prises et interrupteurs, ainsi que l'électricité industrielle.</p></div>
+                        <button class="faq-question" aria-expanded="false">
+                            Quels types de travaux électriques réalisez-vous ?
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous réalisons tous types de travaux électriques : installations neuves, rénovations, mises aux normes, dépannages, tableaux électriques, éclairage intérieur et extérieur, prises et interrupteurs, ainsi que l'électricité industrielle.</p>
+                        </div>
                     </div>
+
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">Vos installations sont-elles conformes aux normes ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-                        <div class="faq-answer"><p>Absolument. Toutes nos installations sont réalisées dans le <strong>strict respect des normes algériennes</strong> en vigueur. Nous vous fournissons une garantie sur nos travaux et un suivi post-installation.</p></div>
+                        <button class="faq-question" aria-expanded="false">
+                            Vos installations sont-elles conformes aux normes ?
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolument. Toutes nos installations sont réalisées dans le <strong>strict respect des normes algériennes</strong> en vigueur. Nous vous fournissons une garantie sur nos travaux et un suivi post-installation.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Section Partenaires -->
+        <section id="partenaires">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos Partenaires</h2>
+                    <p>Nous travaillons avec les plus grandes marques mondiales pour vous garantir qualité et fiabilité</p>
+                </div>
+                
+                <div class="partners-grid">
+                    <img src="https://www.logo.wine/a/logo/Schneider_Electric/Schneider_Electric-Logo.wine.svg" 
+                         alt="Schneider Electric" 
+                         class="partner-logo" 
+                         loading="lazy">
+                    <img src="https://www.logo.wine/a/logo/Legrand_(company)/Legrand_(company)-Logo.wine.svg" 
+                         alt="Legrand" 
+                         class="partner-logo" 
+                         loading="lazy">
+                    <img src="https://www.logo.wine/a/logo/Siemens/Siemens-Logo.wine.svg" 
+                         alt="Siemens" 
+                         class="partner-logo" 
+                         loading="lazy">
+                    <img src="https://www.logo.wine/a/logo/Hikvision/Hikvision-Logo.wine.svg" 
+                         alt="Hikvision" 
+                         class="partner-logo" 
+                         loading="lazy">
+                    <img src="https://www.logo.wine/a/logo/Dahua_Technology/Dahua_Technology-Logo.wine.svg" 
+                         alt="Dahua" 
+                         class="partner-logo" 
+                         loading="lazy">
+                    <img src="https://www.logo.wine/a/logo/Honeywell/Honeywell-Logo.wine.svg" 
+                         alt="Honeywell" 
+                         class="partner-logo" 
+                         loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
         <section id="contact">
             <div class="container">
                 <div class="section-header">
                     <h2>Contactez-Nous</h2>
                     <p>Notre équipe est à votre écoute pour répondre à tous vos besoins</p>
                 </div>
+                
                 <div class="contact-wrapper">
                     <div class="contact-info">
                         <h3>Nos Coordonnées</h3>
+                        
                         <div class="contact-item">
-                            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
                             <div class="contact-item-content">
                                 <h4>Téléphone</h4>
                                 <p><a href="tel:+213540746881">0540 746 881</a><br><a href="tel:+213773927014">0773 927 014</a></p>
                                 <p><small>Disponible 24/7 pour urgences</small></p>
                             </div>
                         </div>
+
                         <div class="contact-item">
-                            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                            </div>
                             <div class="contact-item-content">
                                 <h4>Email</h4>
                                 <p><a href="mailto:acaelecrobuild@gmail.com">acaelecrobuild@gmail.com</a></p>
                                 <p><small>Réponse sous 24h</small></p>
                             </div>
                         </div>
+
                         <div class="contact-item">
-                            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
                             <div class="contact-item-content">
                                 <h4>Horaires</h4>
                                 <p>Lundi - Samedi : 8h00 - 18h00</p>
                                 <p><small>Urgences : 24/7</small></p>
                             </div>
                         </div>
+
                         <h3 style="margin-top:2rem">Suivez-nous</h3>
                         <div class="social-links">
-                            <a href="https://wa.me/213540746881?text=Bonjour%20ACA%20ÉlectroBuild,%20je%20souhaite%20obtenir%20des%20informations" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-                            <a href="https://www.facebook.com/profile.php?id=61586759348766" class="social-link" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-                            <a href="https://www.instagram.com/acaelecrobuild/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-                            <a href="https://www.tiktok.com/@aca_electrobuild" class="social-link" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                            <a href="https://wa.me/213540746881?text=Bonjour%20ACA%20ÉlectroBuild" 
+                               class="social-link" 
+                               target="_blank" 
+                               rel="noopener" 
+                               aria-label="WhatsApp">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61586759348766" 
+                               class="social-link" 
+                               target="_blank" 
+                               rel="noopener" 
+                               aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/acaelecrobuild/" 
+                               class="social-link" 
+                               target="_blank" 
+                               rel="noopener" 
+                               aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@aca_electrobuild" 
+                               class="social-link" 
+                               target="_blank" 
+                               rel="noopener" 
+                               aria-label="TikTok">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
+
                     <div class="contact-form">
                         <h3>Demander un Devis Gratuit</h3>
                         <form action="https://formsubmit.co/acaelecrobuild@gmail.com" method="POST">
                             <input type="hidden" name="_subject" value="Nouvelle demande de devis - ACA ÉlectroBuild">
-                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_captcha" value="true">
                             <input type="hidden" name="_template" value="table">
+                            
                             <div class="form-row">
-                                <div class="form-group"><label for="nom">Nom complet *</label><input type="text" id="nom" name="nom" required placeholder="Votre nom"></div>
-                                <div class="form-group"><label for="telephone">Téléphone *</label><input type="tel" id="telephone" name="telephone" required placeholder="0540 000 000"></div>
+                                <div class="form-group">
+                                    <label for="nom">Nom complet *</label>
+                                    <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone">Téléphone *</label>
+                                    <input type="tel" id="telephone" name="telephone" required placeholder="0540 000 000">
+                                </div>
                             </div>
-                            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="votre@email.com"></div>
-                            <div class="form-group"><label for="service">Type de service *</label><select id="service" name="service" required><option value="">Sélectionnez un service</option><option value="electricite">Électricité Bâtiment & Industrielle</option><option value="reseaux">Réseaux & Télécommunications</option><option value="incendie">Sécurité Incendie (SSI)</option><option value="videosurveillance">Vidéosurveillance</option><option value="acces">Contrôle d'Accès & Anti-Intrusion</option><option value="travaux">Travaux Intérieurs</option><option value="autre">Autre</option></select></div>
-                            <div class="form-group"><label for="wilaya">Wilaya *</label><select id="wilaya" name="wilaya" required><option value="">Sélectionnez votre wilaya</option><option value="boumerdes">Boumerdès</option><option value="alger">Alger</option><option value="tizi-ouzou">Tizi Ouzou</option></select></div>
-                            <div class="form-group"><label for="message">Description du projet *</label><textarea id="message" name="message" required placeholder="Décrivez votre projet ou besoin..."></textarea></div>
-                            <button type="submit" class="btn btn-primary" style="width:100%"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>Envoyer ma demande</button>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Type de service *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="electricite">Électricité Bâtiment & Industrielle</option>
+                                    <option value="reseaux">Réseaux & Télécommunications</option>
+                                    <option value="incendie">Sécurité Incendie (SSI)</option>
+                                    <option value="videosurveillance">Vidéosurveillance</option>
+                                    <option value="acces">Contrôle d'Accès & Anti-Intrusion</option>
+                                    <option value="travaux">Travaux Intérieurs</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="wilaya">Wilaya *</label>
+                                <select id="wilaya" name="wilaya" required>
+                                    <option value="">Sélectionnez votre wilaya</option>
+                                    <option value="boumerdes">Boumerdès</option>
+                                    <option value="alger">Alger</option>
+                                    <option value="tizi-ouzou">Tizi Ouzou</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Description du projet *</label>
+                                <textarea id="message" name="message" required placeholder="Décrivez votre projet ou besoin..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width:100%">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                                </svg>
+                                Envoyer ma demande
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -523,1572 +723,44 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <a href="#accueil" class="footer-logo"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#3b82f6"/><path d="M20 6L10 22h8v12l10-16h-8V6z" fill="white"/></svg><span>ACA</span> ÉlectroBuild</a>
-                <p class="footer-text">© 2026 ACA ÉlectroBuild. Tous droits réservés. | <a href="mailto:acaelecrobuild@gmail.com" style="color:rgba(255,255,255,.8)">acaelecrobuild@gmail.com</a></p>
+                <a href="#accueil" class="footer-logo">
+                    <img src="images/logo.jpg" alt="Logo" width="40" height="40">
+                    ACA ÉlectroBuild
+                </a>
+                <p class="footer-text">
+                    © 2026 ACA ÉlectroBuild. Tous droits réservés. | 
+                    <a href="mailto:acaelecrobuild@gmail.com">acaelecrobuild@gmail.com</a>
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- Bouton WhatsApp flottant -->
     <div class="whatsapp-float">
         <div class="whatsapp-tooltip">Discutons sur WhatsApp !</div>
-        <a href="https://wa.me/213540746881?text=Bonjour%20ACA%20ÉlectroBuild,%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <a href="https://wa.me/213540746881?text=Bonjour%20ACA%20ÉlectroBuild,%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services." 
+           class="whatsapp-btn" 
+           target="_blank" 
+           rel="noopener" 
+           aria-label="Nous contacter sur WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
         </a>
     </div>
 
-    <button class="back-to-top" aria-label="Retour en haut"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
-
-    <script>
-        const mobileMenuBtn=document.querySelector('.mobile-menu-btn'),navLinks=document.querySelector('.nav-links');
-        mobileMenuBtn.addEventListener('click',()=>{const e=mobileMenuBtn.getAttribute('aria-expanded')==='true';mobileMenuBtn.setAttribute('aria-expanded',!e);navLinks.classList.toggle('active')});
-        navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('active');mobileMenuBtn.setAttribute('aria-expanded','false')}));
-        document.querySelectorAll('.faq-question').forEach(b=>{b.addEventListener('click',()=>{const i=b.parentElement,a=i.classList.contains('active');document.querySelectorAll('.faq-item').forEach(x=>{x.classList.remove('active');x.querySelector('.faq-question').setAttribute('aria-expanded','false')});if(!a){i.classList.add('active');b.setAttribute('aria-expanded','true')}})});
-        const backToTop=document.querySelector('.back-to-top');
-        window.addEventListener('scroll',()=>backToTop.classList.toggle('visible',window.scrollY>500));
-        backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-        document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}));
-    </script>
-
-<script>
-/**
- * Iframe 元素高亮注入脚本
- * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
- *
- * 使用方法：
- * 1. 将此脚本添加到目标网站的 HTML 中
- * 2. 或通过浏览器扩展、用户脚本等方式注入
- */
-
-(function () {
-  "use strict";
-
-  // 检查是否在 iframe 中
-  if (window.self === window.top) {
-    return; // 不在 iframe 中，不执行
-  }
-
-  // 检查是否已经初始化过
-  if (window.__iframeHighlightInitialized) {
-    return;
-  }
-  window.__iframeHighlightInitialized = true;
-  console.log("Iframe 高亮脚本已加载");
-
-  // 创建高亮覆盖层
-  var overlay = document.createElement("div");
-  overlay.id = "iframe-highlight-overlay";
-  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
-
-  // 创建悬停高亮框（虚线边框）
-  var highlightBox = document.createElement("div");
-  highlightBox.id = "iframe-highlight-box";
-  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
-
-  // 创建选中节点的常驻高亮框（实线边框）
-  var selectedBox = document.createElement("div");
-  selectedBox.id = "iframe-selected-box";
-  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
-
-  // 创建悬停标签显示
-  var tagLabel = document.createElement("div");
-  tagLabel.id = "iframe-tag-label";
-  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
-
-  // 创建选中节点标签
-  var selectedLabel = document.createElement("div");
-  selectedLabel.id = "iframe-selected-label";
-  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
-  overlay.appendChild(highlightBox);
-  overlay.appendChild(selectedBox);
-  overlay.appendChild(tagLabel);
-  overlay.appendChild(selectedLabel);
-  document.body.appendChild(overlay);
-
-  // 存储当前选中的元素
-  var selectedElement = null;
-  var highlightEnabled = false;
-
-  // 更新选中元素的高亮显示
-  function updateSelectedHighlight(element) {
-    console.log("updateSelectedHighlight called with:", element);
-    if (!element) {
-      selectedBox.style.display = "none";
-      selectedLabel.style.display = "none";
-      selectedElement = null;
-      console.log("Cleared selected highlight");
-      return;
-    }
-    selectedElement = element;
-    var rect = element.getBoundingClientRect();
-    console.log("Selected element rect:", rect);
-
-    // 更新选中高亮框位置
-    selectedBox.style.display = "block";
-    selectedBox.style.left = "".concat(rect.left - 2, "px");
-    selectedBox.style.top = "".concat(rect.top - 2, "px");
-    selectedBox.style.width = "".concat(rect.width + 4, "px");
-    selectedBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新选中标签位置和内容
-    selectedLabel.style.display = "block";
-    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 28;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 5) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
-    if (labelLeft + labelWidth > window.innerWidth - 10) {
-      labelLeft = window.innerWidth - labelWidth - 10;
-    }
-    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
-    selectedLabel.style.top = "".concat(labelTop, "px");
-    console.log("Selected highlight positioned at:", {
-      left: selectedBox.style.left,
-      top: selectedBox.style.top,
-      width: selectedBox.style.width,
-      height: selectedBox.style.height
-    });
-  }
-  function getElementSelector(element) {
-    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
-    var segments = [];
-    var current = element;
-    while (current !== document.documentElement) {
-      var selector = '';
-      // 优先检查唯一ID
-      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
-        segments.unshift("#".concat(current.id));
-        break; // ID唯一，无需继续向上
-      }
-
-      // 生成类名选择器（取第一个有效类名）
-      var classes = Array.from(current.classList).filter(function (c) {
-        return !c.startsWith('js-');
-      });
-      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
-
-      // 生成位置索引（nth-child）
-      var tag = current.tagName.toLowerCase();
-      if (!className) {
-        var siblings = Array.from(current.parentNode.children);
-        var index = siblings.findIndex(function (el) {
-          return el === current;
-        }) + 1;
-        selector = "".concat(tag, ":nth-child(").concat(index, ")");
-      } else {
-        selector = className;
-      }
-      segments.unshift(selector);
-      current = current.parentElement;
-    }
-
-    // 处理根元素
-    if (current === document.documentElement) {
-      segments.unshift('html');
-    }
-    return segments.join(' > ');
-  }
-
-  // 获取元素文本内容
-  function getElementText(element) {
-    var _element$textContent;
-    if (element.tagName === "INPUT") {
-      return element.value || element.placeholder || "";
-    }
-    if (element.tagName === "TEXTAREA") {
-      return element.value || element.placeholder || "";
-    }
-    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
-    return text.length > 50 ? text.substring(0, 50) + "..." : text;
-  }
-
-  // 获取元素属性信息
-  function getElementAttributes(element) {
-    var attrs = {};
-    for (var i = 0; i < element.attributes.length; i++) {
-      var attr = element.attributes[i];
-      attrs[attr.name] = attr.value;
-    }
-    return attrs;
-  }
-
-  // 鼠标悬停事件处理
-  function handleMouseOver(e) {
-    if (!highlightEnabled) return;
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免高亮 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 如果是已选中的元素，不显示悬停高亮
-    if (target === selectedElement) {
-      highlightBox.style.display = "none";
-      tagLabel.style.display = "none";
-      return;
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-
-    // 更新悬停高亮框位置
-    highlightBox.style.display = "block";
-    highlightBox.style.left = "".concat(rect.left - 2, "px");
-    highlightBox.style.top = "".concat(rect.top - 2, "px");
-    highlightBox.style.width = "".concat(rect.width + 4, "px");
-    highlightBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新标签位置和内容
-    tagLabel.style.display = "block";
-    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 22;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 0) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
-      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
-    }
-    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
-    tagLabel.style.top = "".concat(labelTop, "px");
-
-    // 发送消息到父窗口
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 鼠标离开事件处理
-  function handleMouseOut(e) {
-    if (!highlightEnabled) return;
-    var relatedTarget = e.relatedTarget;
-
-    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
-    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
-      return;
-    }
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: null,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 点击事件处理
-  function handleClick(e) {
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免处理 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 检查是否是交互元素，这些元素需要保留默认行为
-    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
-
-    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
-    if (highlightEnabled) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-    console.log("Element clicked:", {
-      tagName: target.tagName,
-      selector: selector,
-      rect: rect
-    });
-
-    // 立即更新选中高亮
-    updateSelectedHighlight(target);
-
-    // 隐藏悬停高亮，因为现在是选中状态
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-click",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 监听来自父窗口的消息
-  function handleParentMessage(event) {
-    console.log("Received message from parent:", event.data);
-    if (event.data.type === "iframe-highlight-toggle") {
-      var enabled = event.data.enabled;
-      console.log("Highlight toggle:", enabled);
-      if (enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "enable-iframe-highlight") {
-      console.log("Enable iframe highlight");
-      enableHighlight();
-    } else if (event.data.type === "disable-iframe-highlight") {
-      console.log("Disable iframe highlight");
-      disableHighlight();
-    } else if (event.data.type === "toggle-iframe-highlight") {
-      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
-      console.log("Toggle iframe highlight to:", _enabled);
-      if (_enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "update-selected-element") {
-      var selector = event.data.selector;
-      console.log("Update selected element with selector:", selector);
-      if (selector) {
-        try {
-          var element = document.querySelector(selector);
-          console.log("Found element by selector:", element);
-          updateSelectedHighlight(element);
-        } catch (error) {
-          console.warn("Failed to select element:", error);
-          updateSelectedHighlight(null);
-        }
-      } else {
-        updateSelectedHighlight(null);
-      }
-    } else if (event.data.type === "clear-selected-element") {
-      console.log("Clear selected element");
-      updateSelectedHighlight(null);
-    }
-  }
-
-  // 启用高亮功能
-  function enableHighlight() {
-    console.log("Enabling highlight");
-    document.addEventListener("mouseover", handleMouseOver, true);
-    document.addEventListener("mouseout", handleMouseOut, true);
-    document.addEventListener("click", handleClick, true);
-    highlightEnabled = true;
-    overlay.style.display = "block";
-  }
-
-  // 禁用高亮功能
-  function disableHighlight() {
-    console.log("Disabling highlight");
-    highlightEnabled = false;
-    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
-    // 这样可以保留选中状态的显示
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
-  }
-
-  // 完全禁用高亮功能（移除所有监听器）
-  function fullyDisableHighlight() {
-    console.log("Fully disabling highlight");
-    highlightEnabled = false;
-    document.removeEventListener("mouseover", handleMouseOver, true);
-    document.removeEventListener("mouseout", handleMouseOut, true);
-    document.removeEventListener("click", handleClick, true);
-    overlay.style.display = "none";
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    selectedBox.style.display = "none";
-    selectedLabel.style.display = "none";
-  }
-
-  // 添加事件监听
-  enableHighlight();
-  window.addEventListener("message", handleParentMessage);
-
-  // 暴露全局函数供外部调用
-  window.__iframeHighlightControl = {
-    enable: enableHighlight,
-    disable: disableHighlight,
-    fullyDisable: fullyDisableHighlight,
-    isEnabled: function isEnabled() {
-      return highlightEnabled;
-    },
-    getSelectedElement: function getSelectedElement() {
-      return selectedElement;
-    },
-    updateSelected: updateSelectedHighlight,
-    // 通过消息发送开关控制
-    sendToggleMessage: function sendToggleMessage(enabled) {
-      window.parent.postMessage({
-        type: 'iframe-highlight-status',
-        enabled: enabled || highlightEnabled,
-        source: 'iframe-highlight-injector'
-      }, '*');
-    }
-  };
-
-  // 通知父窗口脚本已加载
-  try {
-    window.parent.postMessage({
-      type: "iframe-highlight-ready",
-      data: {
-        url: window.location.href,
-        userAgent: navigator.userAgent,
-        timestamp: Date.now()
-      },
-      source: "iframe-highlight-injector"
-    }, "*");
-  } catch (error) {
-    console.warn("无法发送就绪消息到父窗口:", error);
-  }
-
-  // 清理函数
-  window.__iframeHighlightCleanup = function () {
-    fullyDisableHighlight();
-    window.removeEventListener("message", handleParentMessage);
-    if (overlay.parentElement) {
-      overlay.parentElement.removeChild(overlay);
-    }
-    delete window.__iframeHighlightInitialized;
-    delete window.__iframeHighlightCleanup;
-  };
-})();
-
-</script>
-
-<script>
-/**
- * Iframe 元素高亮注入脚本
- * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
- *
- * 使用方法：
- * 1. 将此脚本添加到目标网站的 HTML 中
- * 2. 或通过浏览器扩展、用户脚本等方式注入
- */
-
-(function () {
-  "use strict";
-
-  // 检查是否在 iframe 中
-  if (window.self === window.top) {
-    return; // 不在 iframe 中，不执行
-  }
-
-  // 检查是否已经初始化过
-  if (window.__iframeHighlightInitialized) {
-    return;
-  }
-  window.__iframeHighlightInitialized = true;
-  console.log("Iframe 高亮脚本已加载");
-
-  // 创建高亮覆盖层
-  var overlay = document.createElement("div");
-  overlay.id = "iframe-highlight-overlay";
-  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
-
-  // 创建悬停高亮框（虚线边框）
-  var highlightBox = document.createElement("div");
-  highlightBox.id = "iframe-highlight-box";
-  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
-
-  // 创建选中节点的常驻高亮框（实线边框）
-  var selectedBox = document.createElement("div");
-  selectedBox.id = "iframe-selected-box";
-  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
-
-  // 创建悬停标签显示
-  var tagLabel = document.createElement("div");
-  tagLabel.id = "iframe-tag-label";
-  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
-
-  // 创建选中节点标签
-  var selectedLabel = document.createElement("div");
-  selectedLabel.id = "iframe-selected-label";
-  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
-  overlay.appendChild(highlightBox);
-  overlay.appendChild(selectedBox);
-  overlay.appendChild(tagLabel);
-  overlay.appendChild(selectedLabel);
-  document.body.appendChild(overlay);
-
-  // 存储当前选中的元素
-  var selectedElement = null;
-  var highlightEnabled = false;
-
-  // 更新选中元素的高亮显示
-  function updateSelectedHighlight(element) {
-    console.log("updateSelectedHighlight called with:", element);
-    if (!element) {
-      selectedBox.style.display = "none";
-      selectedLabel.style.display = "none";
-      selectedElement = null;
-      console.log("Cleared selected highlight");
-      return;
-    }
-    selectedElement = element;
-    var rect = element.getBoundingClientRect();
-    console.log("Selected element rect:", rect);
-
-    // 更新选中高亮框位置
-    selectedBox.style.display = "block";
-    selectedBox.style.left = "".concat(rect.left - 2, "px");
-    selectedBox.style.top = "".concat(rect.top - 2, "px");
-    selectedBox.style.width = "".concat(rect.width + 4, "px");
-    selectedBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新选中标签位置和内容
-    selectedLabel.style.display = "block";
-    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 28;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 5) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
-    if (labelLeft + labelWidth > window.innerWidth - 10) {
-      labelLeft = window.innerWidth - labelWidth - 10;
-    }
-    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
-    selectedLabel.style.top = "".concat(labelTop, "px");
-    console.log("Selected highlight positioned at:", {
-      left: selectedBox.style.left,
-      top: selectedBox.style.top,
-      width: selectedBox.style.width,
-      height: selectedBox.style.height
-    });
-  }
-  function getElementSelector(element) {
-    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
-    var segments = [];
-    var current = element;
-    while (current !== document.documentElement) {
-      var selector = '';
-      // 优先检查唯一ID
-      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
-        segments.unshift("#".concat(current.id));
-        break; // ID唯一，无需继续向上
-      }
-
-      // 生成类名选择器（取第一个有效类名）
-      var classes = Array.from(current.classList).filter(function (c) {
-        return !c.startsWith('js-');
-      });
-      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
-
-      // 生成位置索引（nth-child）
-      var tag = current.tagName.toLowerCase();
-      if (!className) {
-        var siblings = Array.from(current.parentNode.children);
-        var index = siblings.findIndex(function (el) {
-          return el === current;
-        }) + 1;
-        selector = "".concat(tag, ":nth-child(").concat(index, ")");
-      } else {
-        selector = className;
-      }
-      segments.unshift(selector);
-      current = current.parentElement;
-    }
-
-    // 处理根元素
-    if (current === document.documentElement) {
-      segments.unshift('html');
-    }
-    return segments.join(' > ');
-  }
-
-  // 获取元素文本内容
-  function getElementText(element) {
-    var _element$textContent;
-    if (element.tagName === "INPUT") {
-      return element.value || element.placeholder || "";
-    }
-    if (element.tagName === "TEXTAREA") {
-      return element.value || element.placeholder || "";
-    }
-    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
-    return text.length > 50 ? text.substring(0, 50) + "..." : text;
-  }
-
-  // 获取元素属性信息
-  function getElementAttributes(element) {
-    var attrs = {};
-    for (var i = 0; i < element.attributes.length; i++) {
-      var attr = element.attributes[i];
-      attrs[attr.name] = attr.value;
-    }
-    return attrs;
-  }
-
-  // 鼠标悬停事件处理
-  function handleMouseOver(e) {
-    if (!highlightEnabled) return;
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免高亮 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 如果是已选中的元素，不显示悬停高亮
-    if (target === selectedElement) {
-      highlightBox.style.display = "none";
-      tagLabel.style.display = "none";
-      return;
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-
-    // 更新悬停高亮框位置
-    highlightBox.style.display = "block";
-    highlightBox.style.left = "".concat(rect.left - 2, "px");
-    highlightBox.style.top = "".concat(rect.top - 2, "px");
-    highlightBox.style.width = "".concat(rect.width + 4, "px");
-    highlightBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新标签位置和内容
-    tagLabel.style.display = "block";
-    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 22;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 0) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
-      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
-    }
-    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
-    tagLabel.style.top = "".concat(labelTop, "px");
-
-    // 发送消息到父窗口
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 鼠标离开事件处理
-  function handleMouseOut(e) {
-    if (!highlightEnabled) return;
-    var relatedTarget = e.relatedTarget;
-
-    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
-    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
-      return;
-    }
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: null,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 点击事件处理
-  function handleClick(e) {
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免处理 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 检查是否是交互元素，这些元素需要保留默认行为
-    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
-
-    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
-    if (highlightEnabled) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-    console.log("Element clicked:", {
-      tagName: target.tagName,
-      selector: selector,
-      rect: rect
-    });
-
-    // 立即更新选中高亮
-    updateSelectedHighlight(target);
-
-    // 隐藏悬停高亮，因为现在是选中状态
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-click",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 监听来自父窗口的消息
-  function handleParentMessage(event) {
-    console.log("Received message from parent:", event.data);
-    if (event.data.type === "iframe-highlight-toggle") {
-      var enabled = event.data.enabled;
-      console.log("Highlight toggle:", enabled);
-      if (enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "enable-iframe-highlight") {
-      console.log("Enable iframe highlight");
-      enableHighlight();
-    } else if (event.data.type === "disable-iframe-highlight") {
-      console.log("Disable iframe highlight");
-      disableHighlight();
-    } else if (event.data.type === "toggle-iframe-highlight") {
-      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
-      console.log("Toggle iframe highlight to:", _enabled);
-      if (_enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "update-selected-element") {
-      var selector = event.data.selector;
-      console.log("Update selected element with selector:", selector);
-      if (selector) {
-        try {
-          var element = document.querySelector(selector);
-          console.log("Found element by selector:", element);
-          updateSelectedHighlight(element);
-        } catch (error) {
-          console.warn("Failed to select element:", error);
-          updateSelectedHighlight(null);
-        }
-      } else {
-        updateSelectedHighlight(null);
-      }
-    } else if (event.data.type === "clear-selected-element") {
-      console.log("Clear selected element");
-      updateSelectedHighlight(null);
-    }
-  }
-
-  // 启用高亮功能
-  function enableHighlight() {
-    console.log("Enabling highlight");
-    document.addEventListener("mouseover", handleMouseOver, true);
-    document.addEventListener("mouseout", handleMouseOut, true);
-    document.addEventListener("click", handleClick, true);
-    highlightEnabled = true;
-    overlay.style.display = "block";
-  }
-
-  // 禁用高亮功能
-  function disableHighlight() {
-    console.log("Disabling highlight");
-    highlightEnabled = false;
-    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
-    // 这样可以保留选中状态的显示
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
-  }
-
-  // 完全禁用高亮功能（移除所有监听器）
-  function fullyDisableHighlight() {
-    console.log("Fully disabling highlight");
-    highlightEnabled = false;
-    document.removeEventListener("mouseover", handleMouseOver, true);
-    document.removeEventListener("mouseout", handleMouseOut, true);
-    document.removeEventListener("click", handleClick, true);
-    overlay.style.display = "none";
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    selectedBox.style.display = "none";
-    selectedLabel.style.display = "none";
-  }
-
-  // 添加事件监听
-  enableHighlight();
-  window.addEventListener("message", handleParentMessage);
-
-  // 暴露全局函数供外部调用
-  window.__iframeHighlightControl = {
-    enable: enableHighlight,
-    disable: disableHighlight,
-    fullyDisable: fullyDisableHighlight,
-    isEnabled: function isEnabled() {
-      return highlightEnabled;
-    },
-    getSelectedElement: function getSelectedElement() {
-      return selectedElement;
-    },
-    updateSelected: updateSelectedHighlight,
-    // 通过消息发送开关控制
-    sendToggleMessage: function sendToggleMessage(enabled) {
-      window.parent.postMessage({
-        type: 'iframe-highlight-status',
-        enabled: enabled || highlightEnabled,
-        source: 'iframe-highlight-injector'
-      }, '*');
-    }
-  };
-
-  // 通知父窗口脚本已加载
-  try {
-    window.parent.postMessage({
-      type: "iframe-highlight-ready",
-      data: {
-        url: window.location.href,
-        userAgent: navigator.userAgent,
-        timestamp: Date.now()
-      },
-      source: "iframe-highlight-injector"
-    }, "*");
-  } catch (error) {
-    console.warn("无法发送就绪消息到父窗口:", error);
-  }
-
-  // 清理函数
-  window.__iframeHighlightCleanup = function () {
-    fullyDisableHighlight();
-    window.removeEventListener("message", handleParentMessage);
-    if (overlay.parentElement) {
-      overlay.parentElement.removeChild(overlay);
-    }
-    delete window.__iframeHighlightInitialized;
-    delete window.__iframeHighlightCleanup;
-  };
-})();
-
-</script>
-
-<script>
-/**
- * Iframe 元素高亮注入脚本
- * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
- *
- * 使用方法：
- * 1. 将此脚本添加到目标网站的 HTML 中
- * 2. 或通过浏览器扩展、用户脚本等方式注入
- */
-
-(function () {
-  "use strict";
-
-  // 检查是否在 iframe 中
-  if (window.self === window.top) {
-    return; // 不在 iframe 中，不执行
-  }
-
-  // 检查是否已经初始化过
-  if (window.__iframeHighlightInitialized) {
-    return;
-  }
-  window.__iframeHighlightInitialized = true;
-  console.log("Iframe 高亮脚本已加载");
-
-  // 创建高亮覆盖层
-  var overlay = document.createElement("div");
-  overlay.id = "iframe-highlight-overlay";
-  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
-
-  // 创建悬停高亮框（虚线边框）
-  var highlightBox = document.createElement("div");
-  highlightBox.id = "iframe-highlight-box";
-  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
-
-  // 创建选中节点的常驻高亮框（实线边框）
-  var selectedBox = document.createElement("div");
-  selectedBox.id = "iframe-selected-box";
-  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
-
-  // 创建悬停标签显示
-  var tagLabel = document.createElement("div");
-  tagLabel.id = "iframe-tag-label";
-  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
-
-  // 创建选中节点标签
-  var selectedLabel = document.createElement("div");
-  selectedLabel.id = "iframe-selected-label";
-  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
-  overlay.appendChild(highlightBox);
-  overlay.appendChild(selectedBox);
-  overlay.appendChild(tagLabel);
-  overlay.appendChild(selectedLabel);
-  document.body.appendChild(overlay);
-
-  // 存储当前选中的元素
-  var selectedElement = null;
-  var highlightEnabled = false;
-
-  // 更新选中元素的高亮显示
-  function updateSelectedHighlight(element) {
-    console.log("updateSelectedHighlight called with:", element);
-    if (!element) {
-      selectedBox.style.display = "none";
-      selectedLabel.style.display = "none";
-      selectedElement = null;
-      console.log("Cleared selected highlight");
-      return;
-    }
-    selectedElement = element;
-    var rect = element.getBoundingClientRect();
-    console.log("Selected element rect:", rect);
-
-    // 更新选中高亮框位置
-    selectedBox.style.display = "block";
-    selectedBox.style.left = "".concat(rect.left - 2, "px");
-    selectedBox.style.top = "".concat(rect.top - 2, "px");
-    selectedBox.style.width = "".concat(rect.width + 4, "px");
-    selectedBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新选中标签位置和内容
-    selectedLabel.style.display = "block";
-    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 28;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 5) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
-    if (labelLeft + labelWidth > window.innerWidth - 10) {
-      labelLeft = window.innerWidth - labelWidth - 10;
-    }
-    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
-    selectedLabel.style.top = "".concat(labelTop, "px");
-    console.log("Selected highlight positioned at:", {
-      left: selectedBox.style.left,
-      top: selectedBox.style.top,
-      width: selectedBox.style.width,
-      height: selectedBox.style.height
-    });
-  }
-  function getElementSelector(element) {
-    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
-    var segments = [];
-    var current = element;
-    while (current !== document.documentElement) {
-      var selector = '';
-      // 优先检查唯一ID
-      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
-        segments.unshift("#".concat(current.id));
-        break; // ID唯一，无需继续向上
-      }
-
-      // 生成类名选择器（取第一个有效类名）
-      var classes = Array.from(current.classList).filter(function (c) {
-        return !c.startsWith('js-');
-      });
-      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
-
-      // 生成位置索引（nth-child）
-      var tag = current.tagName.toLowerCase();
-      if (!className) {
-        var siblings = Array.from(current.parentNode.children);
-        var index = siblings.findIndex(function (el) {
-          return el === current;
-        }) + 1;
-        selector = "".concat(tag, ":nth-child(").concat(index, ")");
-      } else {
-        selector = className;
-      }
-      segments.unshift(selector);
-      current = current.parentElement;
-    }
-
-    // 处理根元素
-    if (current === document.documentElement) {
-      segments.unshift('html');
-    }
-    return segments.join(' > ');
-  }
-
-  // 获取元素文本内容
-  function getElementText(element) {
-    var _element$textContent;
-    if (element.tagName === "INPUT") {
-      return element.value || element.placeholder || "";
-    }
-    if (element.tagName === "TEXTAREA") {
-      return element.value || element.placeholder || "";
-    }
-    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
-    return text.length > 50 ? text.substring(0, 50) + "..." : text;
-  }
-
-  // 获取元素属性信息
-  function getElementAttributes(element) {
-    var attrs = {};
-    for (var i = 0; i < element.attributes.length; i++) {
-      var attr = element.attributes[i];
-      attrs[attr.name] = attr.value;
-    }
-    return attrs;
-  }
-
-  // 鼠标悬停事件处理
-  function handleMouseOver(e) {
-    if (!highlightEnabled) return;
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免高亮 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 如果是已选中的元素，不显示悬停高亮
-    if (target === selectedElement) {
-      highlightBox.style.display = "none";
-      tagLabel.style.display = "none";
-      return;
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-
-    // 更新悬停高亮框位置
-    highlightBox.style.display = "block";
-    highlightBox.style.left = "".concat(rect.left - 2, "px");
-    highlightBox.style.top = "".concat(rect.top - 2, "px");
-    highlightBox.style.width = "".concat(rect.width + 4, "px");
-    highlightBox.style.height = "".concat(rect.height + 4, "px");
-
-    // 更新标签位置和内容
-    tagLabel.style.display = "block";
-    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
-
-    // 计算标签位置，确保不超出视窗
-    var labelTop = rect.top - 22;
-    var labelLeft = rect.left;
-
-    // 如果标签会超出顶部，显示在元素下方
-    if (labelTop < 0) {
-      labelTop = rect.bottom + 5;
-    }
-
-    // 如果标签会超出右侧，向左调整
-    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
-      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
-    }
-    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
-    tagLabel.style.top = "".concat(labelTop, "px");
-
-    // 发送消息到父窗口
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 鼠标离开事件处理
-  function handleMouseOut(e) {
-    if (!highlightEnabled) return;
-    var relatedTarget = e.relatedTarget;
-
-    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
-    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
-      return;
-    }
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-hover",
-        data: null,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 点击事件处理
-  function handleClick(e) {
-    var target = e.target;
-    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
-      return;
-    }
-
-    // 避免处理 html 和 body 元素
-    if (target === document.documentElement || target === document.body) {
-      return;
-    }
-
-    // 检查是否是交互元素，这些元素需要保留默认行为
-    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
-
-    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
-    if (highlightEnabled) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    var rect = target.getBoundingClientRect();
-    var selector = getElementSelector(target);
-    var text = getElementText(target);
-    var attributes = getElementAttributes(target);
-    console.log("Element clicked:", {
-      tagName: target.tagName,
-      selector: selector,
-      rect: rect
-    });
-
-    // 立即更新选中高亮
-    updateSelectedHighlight(target);
-
-    // 隐藏悬停高亮，因为现在是选中状态
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    var elementInfo = {
-      tagName: target.tagName.toLowerCase(),
-      rect: {
-        left: rect.left,
-        top: rect.top,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height,
-        x: rect.x,
-        y: rect.y
-      },
-      selector: selector,
-      text: text,
-      attributes: attributes,
-      url: window.location.href,
-      path: window.location.pathname,
-      timestamp: Date.now()
-    };
-    try {
-      window.parent.postMessage({
-        type: "iframe-element-click",
-        data: elementInfo,
-        source: "iframe-highlight-injector"
-      }, "*");
-    } catch (error) {
-      console.warn("无法发送消息到父窗口:", error);
-    }
-  }
-
-  // 监听来自父窗口的消息
-  function handleParentMessage(event) {
-    console.log("Received message from parent:", event.data);
-    if (event.data.type === "iframe-highlight-toggle") {
-      var enabled = event.data.enabled;
-      console.log("Highlight toggle:", enabled);
-      if (enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "enable-iframe-highlight") {
-      console.log("Enable iframe highlight");
-      enableHighlight();
-    } else if (event.data.type === "disable-iframe-highlight") {
-      console.log("Disable iframe highlight");
-      disableHighlight();
-    } else if (event.data.type === "toggle-iframe-highlight") {
-      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
-      console.log("Toggle iframe highlight to:", _enabled);
-      if (_enabled) {
-        enableHighlight();
-      } else {
-        disableHighlight();
-      }
-    } else if (event.data.type === "update-selected-element") {
-      var selector = event.data.selector;
-      console.log("Update selected element with selector:", selector);
-      if (selector) {
-        try {
-          var element = document.querySelector(selector);
-          console.log("Found element by selector:", element);
-          updateSelectedHighlight(element);
-        } catch (error) {
-          console.warn("Failed to select element:", error);
-          updateSelectedHighlight(null);
-        }
-      } else {
-        updateSelectedHighlight(null);
-      }
-    } else if (event.data.type === "clear-selected-element") {
-      console.log("Clear selected element");
-      updateSelectedHighlight(null);
-    }
-  }
-
-  // 启用高亮功能
-  function enableHighlight() {
-    console.log("Enabling highlight");
-    document.addEventListener("mouseover", handleMouseOver, true);
-    document.addEventListener("mouseout", handleMouseOut, true);
-    document.addEventListener("click", handleClick, true);
-    highlightEnabled = true;
-    overlay.style.display = "block";
-  }
-
-  // 禁用高亮功能
-  function disableHighlight() {
-    console.log("Disabling highlight");
-    highlightEnabled = false;
-    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
-    // 这样可以保留选中状态的显示
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
-  }
-
-  // 完全禁用高亮功能（移除所有监听器）
-  function fullyDisableHighlight() {
-    console.log("Fully disabling highlight");
-    highlightEnabled = false;
-    document.removeEventListener("mouseover", handleMouseOver, true);
-    document.removeEventListener("mouseout", handleMouseOut, true);
-    document.removeEventListener("click", handleClick, true);
-    overlay.style.display = "none";
-    highlightBox.style.display = "none";
-    tagLabel.style.display = "none";
-    selectedBox.style.display = "none";
-    selectedLabel.style.display = "none";
-  }
-
-  // 添加事件监听
-  enableHighlight();
-  window.addEventListener("message", handleParentMessage);
-
-  // 暴露全局函数供外部调用
-  window.__iframeHighlightControl = {
-    enable: enableHighlight,
-    disable: disableHighlight,
-    fullyDisable: fullyDisableHighlight,
-    isEnabled: function isEnabled() {
-      return highlightEnabled;
-    },
-    getSelectedElement: function getSelectedElement() {
-      return selectedElement;
-    },
-    updateSelected: updateSelectedHighlight,
-    // 通过消息发送开关控制
-    sendToggleMessage: function sendToggleMessage(enabled) {
-      window.parent.postMessage({
-        type: 'iframe-highlight-status',
-        enabled: enabled || highlightEnabled,
-        source: 'iframe-highlight-injector'
-      }, '*');
-    }
-  };
-
-  // 通知父窗口脚本已加载
-  try {
-    window.parent.postMessage({
-      type: "iframe-highlight-ready",
-      data: {
-        url: window.location.href,
-        userAgent: navigator.userAgent,
-        timestamp: Date.now()
-      },
-      source: "iframe-highlight-injector"
-    }, "*");
-  } catch (error) {
-    console.warn("无法发送就绪消息到父窗口:", error);
-  }
-
-  // 清理函数
-  window.__iframeHighlightCleanup = function () {
-    fullyDisableHighlight();
-    window.removeEventListener("message", handleParentMessage);
-    if (overlay.parentElement) {
-      overlay.parentElement.removeChild(overlay);
-    }
-    delete window.__iframeHighlightInitialized;
-    delete window.__iframeHighlightCleanup;
-  };
-})();
-
-</script>
-<style>
-#minimax-floating-ball {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 12px;
-  background: #222222;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  color: #F8F8F8;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  z-index: 9999;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-#minimax-floating-ball:hover {
-  transform: translateY(-2px);
-  background: #383838;
-}
-.minimax-ball-content {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.minimax-logo-wave {
-  
-  width: 20px;
-  height: 17px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='17' viewBox='0 0 20 17' fill='none'%3E%3Cpath d='M20 12.3718L16.283 16.2413H12.2518V13.1614H9.17175V16.2413H7.00999V13.1613H3.92998V16.2413H0V4.00101L3.84145 0H20V12.3718Z' fill='white'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.minimax-ball-text {
-  font-size: 12px;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.minimax-close-icon {
-  margin-left: 8px;
-  font-size: 16px;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.minimax-close-icon:hover {
-  opacity: 1;
-}
-</style>
-<div id="minimax-floating-ball">
-  <div class="minimax-ball-content">
-    <div class="minimax-logo-wave"></div>
-    <span class="minimax-ball-text">Created by MiniMax Agent</span>
-  </div>
-  <div class="minimax-close-icon">×</div>
-</div>
-<script>
-// Initialize floating ball functionality
-function initFloatingBall() {
-  const ball = document.getElementById('minimax-floating-ball');
-  if (!ball) return;
-
-  // Initial animation
-  ball.style.opacity = '0';
-  ball.style.transform = 'translateY(20px)';
-
-  setTimeout(() => {
-    ball.style.opacity = '1';
-    ball.style.transform = 'translateY(0)';
-  }, 500);
-
-  // Handle logo click
-  const ballContent = ball.querySelector('.minimax-ball-content');
-  ballContent.addEventListener('click', function (e) {
-    e.stopPropagation();
-    window.open('https://agent.minimax.io/', '_blank');
-    ball.style.transform = 'scale(0.95)';
-    setTimeout(() => {
-      ball.style.transform = 'scale(1)';
-    }, 100);
-  });
-
-  // Handle close button click
-  const closeIcon = ball.querySelector('.minimax-close-icon');
-  closeIcon.addEventListener('click', function (e) {
-    e.stopPropagation();
-    ball.style.opacity = '0';
-    ball.style.transform = 'translateY(20px)';
-
-    setTimeout(() => {
-      ball.style.display = 'none';
-    }, 300);
-  });
-}
-
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initFloatingBall); 
-</script>
+    <!-- Bouton Retour en haut -->
+    <button class="back-to-top" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>

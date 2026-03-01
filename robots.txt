@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acaelecrobuild-byte.github.io/ACAElectroBuild/sitemap.xml
